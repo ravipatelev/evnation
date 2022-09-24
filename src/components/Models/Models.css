@@ -1,0 +1,31 @@
+/* .row>* {
+    padding: 0 !important;
+} */
+
+.priceColor {
+  color: var(--primary-green);
+}
+
+.zIndexM {
+  z-index: 1;
+}
+
+.absolutePaddingBottom {
+  padding-bottom: 175px;
+}
+
+.nthChild:nth-child(1) img {
+  padding-top: 15px;
+}
+
+.nthChild:nth-child(5) img {
+  padding-top: 25px;
+}
+
+.nthChild:nth-child(6) img {
+  padding-top: 25px;
+}
+
+.nthChild:nth-child(7) img {
+  padding-top: 5px;
+}

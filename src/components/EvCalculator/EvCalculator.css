@@ -1,0 +1,69 @@
+.myTextSuccess {
+  color: var(--primary-green);
+}
+
+.myTextSuccess:hover {
+  color: var(--ev-green);
+  background: #212529;
+}
+
+.table-bordered {
+  border: 2px solid #000;
+}
+
+.centerVertically {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.savingsBorder {
+  border: 2px solid var(--ev-green);
+}
+
+.bgYellowGradient {
+  background: linear-gradient(#ffdd00, #fbb034);
+}
+
+.bgGreenGradient {
+  background: linear-gradient(#18c54f, #148b3a);
+}
+
+.myButtonR {
+  color: var(--primary-blue);
+  background: #000 !important;
+  border: 3px solid var(--primary-blue);
+  font-weight: bold;
+}
+
+.myButtonR:hover,
+.myButtonR.active {
+  color: var(--primary-blue);
+  background: var(--primary-blue);
+  border: 3px solid var(--primary-blue);
+  cursor: auto;
+}
+
+.myButtonBorder:hover {
+  border: 3px solid var(--primary-blue) !important;
+}
+
+.savingsWidth {
+  width: 75%;
+}
+.savingsImg {
+  text-align: end;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .savingsWidth {
+    width: 30%;
+  }
+  .savingsImg {
+    text-align: center;
+  }
+}

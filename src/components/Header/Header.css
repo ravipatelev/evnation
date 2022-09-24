@@ -1,0 +1,98 @@
+.nav-link {
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--primary-blue) !important;
+}
+
+.nav-link:focus {
+  color: var(--primary-blue) !important;
+  font-weight: bold;
+}
+
+.nav-link:after {
+  display: block;
+  content: '';
+  border-bottom: 3px solid var(--primary-blue);
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-link.fromLeft:after {
+  transform-origin: 100% 50%;
+}
+
+.nav-link.fromLeft:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+.myButton {
+  color: black;
+  background: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  font-weight: bold;
+  /* box-shadow: 0 0; */
+}
+
+.myButton:hover,
+.myButton.active {
+  color: var(--primary-blue);
+  background: #212529 !important;
+  border: 2px solid var(--primary-blue);
+}
+
+.evLogo {
+  width: 70%;
+}
+
+.maxNavHeight {
+  max-height: 75px;
+}
+
+@media screen and (max-width: 991px) {
+  .home992 {
+    margin-top: 10px !important;
+  }
+
+  .freeRide992 {
+    margin: 10px 0 15px 0 !important;
+  }
+
+  ul li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    margin: 0 10px !important;
+  }
+
+  /* .myImg {
+    width: 50%;
+  } */
+
+  /* .hoverMedia:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid var(--primary-blue);
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .hoverMedia:hover:after {
+    transform: scaleX(0.1);
+  }
+
+  .nav-link:after {
+    border-bottom: 0px solid transparent;
+  } */
+}
+
+/* @media screen and (max-width: 500px) {
+  .myImg {
+    width: 80%;
+  }
+} */

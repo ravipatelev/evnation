@@ -1,0 +1,102 @@
+.react-multi-carousel-list {
+  position: unset !important;
+  margin: 0 -14% !important;
+}
+
+.zIndexM {
+  z-index: 1;
+}
+
+.absolutePaddingBottomHome {
+  padding-bottom: 175px;
+}
+
+@media screen and (max-width: 1700px) {
+  .react-multi-carousel-list {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .react-multi-carousel-list {
+    margin: 0 3% !important;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .react-multi-carousel-list {
+    margin: 0 5% !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .react-multi-carousel-list {
+    margin: 0 7% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .margin576 {
+    margin: 0 30px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .react-multi-carousel-list {
+    margin: 0 -5% !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .react-multi-carousel-list {
+    margin: 0 -3% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .react-multi-carousel-list {
+    margin: 0 -1% !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .react-multi-carousel-list {
+    margin: 0 1% !important;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .react-multi-carousel-list {
+    margin: 0 3% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .react-multi-carousel-list {
+    margin: 0 -10% !important;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .react-multi-carousel-list {
+    margin: 0 -2% !important;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .react-multi-carousel-list {
+    margin: 0 2% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .react-multi-carousel-list {
+    margin: 0 6% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .react-multi-carousel-list {
+    margin: 0 10% !important;
+  }
+}

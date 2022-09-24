@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --primary-green: #00ff73;
+  --primary-blue: #18dbed;
+  --ev-green: #36b680;
+  --ev-blue: #0898d9;
+  /* font-size: 1.1rem; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* common classes */
+.textEvGreen {
+  color: var(--ev-green);
+}
+
+.textEvBlue {
+  color: var(--ev-blue);
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.bgLightBlue{
+  background: #f0e1e4;
+}
+
+/* common classes */
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+
+.myHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  /* background: #31373e; */
+}
+
+.myFooter {
+  margin-top: auto;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  margin: auto 0 !important;
+  z-index: 1000;
+}
+
+.whatsapp:hover {
+  color: black;
+}
+
+@media screen and (max-width: 306px) {
+  * {
+    display: none;
+  }
+}
