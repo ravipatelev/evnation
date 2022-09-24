@@ -83,7 +83,7 @@ const ContactUs = () => {
                       />
                       {submitted && !values.Name && (
                         <span className="text-danger px-1">
-                          Please enter a first name
+                          Please enter your Name
                         </span>
                       )}
                     </div>
@@ -95,14 +95,14 @@ const ContactUs = () => {
                         id="Contact"
                         className="form-control"
                         type="text"
-                        placeholder="Contact"
+                        placeholder="Mobile Number"
                         name="Contact"
                         value={values.Contact}
                         onChange={handleChange}
                       />
                       {submitted && !values.Contact && (
                         <span className="text-danger px-1">
-                          Please enter Contact
+                          Please enter your Mobile Number
                         </span>
                       )}
                     </div>
@@ -114,7 +114,7 @@ const ContactUs = () => {
                         id="Email"
                         className="form-control"
                         type="text"
-                        placeholder="Email"
+                        placeholder="Email Id"
                         name="Email"
                         value={values.Email}
                         onChange={handleChange}
@@ -128,7 +128,7 @@ const ContactUs = () => {
                         id="HowDidYouHear"
                         className="form-control"
                         type="text"
-                        placeholder="HowDidYouHear"
+                        placeholder="How did you hear about us?"
                         name="HowDidYouHear"
                         value={values.HowDidYouHear}
                         onChange={handleChange}

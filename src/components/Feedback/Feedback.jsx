@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import "./BookFreeTestRide.css"
+import "./Feedback.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
-const BookFreeTestRide = () => {
+const ContactUs = () => {
   const [values, setValues] = useState({
     Name: "",
     Contact: "",
     Email: "",
     HowDidYouHear: "",
-    Message: "I would like to book free test drive! ",
+    Message: "",
   });
   const [initialState, setInitialState] = useState(true);
   const [submitted, setSubmitted] = useState(false);
@@ -40,23 +40,22 @@ const BookFreeTestRide = () => {
   };
 
   return (
-    <div className="container freeRideContainer py-4">
-      <h1 className="text-center pb-4 mb-3">Book{" "}
-        <span className="textEvGreen">Free</span>{" "}Test{" "}
-        <span className="textEvBlue">Ride</span>
+    <div className="container py-4">
+      <h1 className="text-center pb-4 mb-3">
+        <span className="textEvGreen">Feedback</span>
+        <span className="textEvBlue"></span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">
-          <p className="fw-bold fs-4 text-center pb-3">Let's drive it!</p>
+          <p className="fw-bold fs-4 text-center pb-3">We're here for you!</p>
           <ProgressiveImage
-            src="https://drive.google.com/uc?export=view&id=1cIuEDjFMj9lExM2N8MFOa9-Yrbt6KWhs"
-            alt="contact us image"
+            src="https://drive.google.com/uc?export=view&id=1zdhL3xWoYQsmGkPn1ELxO4uYBDqE0JCp"
+            alt="feedback image"
             className="col-md-12 calcImgWidth"
           />
         </div>
         <div className="col-md-6 px-5">
           <div className="row">
-            {/* <div className="col-md-2"></div> */}
             <form className="col-md-12" onSubmit={handleSubmit}>
               {initialState && (
                 <div>
@@ -83,12 +82,12 @@ const BookFreeTestRide = () => {
                     <div className="mb-3">
                       <input
                         id="Contact"
-                        onChange={handleChange}
                         className="form-control"
                         type="text"
                         placeholder="Mobile Number"
                         name="Contact"
                         value={values.Contact}
+                        onChange={handleChange}
                       />
                       {submitted && !values.Contact && (
                         <span className="text-danger px-1">
@@ -100,49 +99,24 @@ const BookFreeTestRide = () => {
 
                   {!valid && (
                     <div className="mb-3">
-                      <input
-                        id="Email"
-                        className="form-control"
-                        type="text"
-                        placeholder="Email Id"
-                        name="Email"
-                        value={values.Email}
-                        onChange={handleChange}
-                      />
-                    </div>
-                  )}
-
-                  {!valid && (
-                    <div className="mb-3">
-                      <input
-                        id="Area"
-                        className="form-control"
-                        type="text"
-                        placeholder="Area"
-                        name="Area"
-                        value={values.Area}
-                        onChange={handleChange}
-                      />
-                    </div>
-                  )}
-
-                  {!valid && (
-                    <div className="mb-3">
                       <textarea
                         id="Message"
                         className="form-control"
                         type="text"
                         rows="4"
+                        placeholder="Your Feedback"
                         name="Message"
-                        value={values.Message}
                         onChange={handleChange}
                       />
                     </div>
                   )}
 
                   {!valid && (
-                    <button className="btn btn-info mt-3" type="submit">
-                      Book now
+                    <button
+                      className="btn myButton fw-normal mt-3"
+                      type="submit"
+                    >
+                      Send Feedback
                     </button>
                   )}
                 </div>
@@ -163,4 +137,4 @@ const BookFreeTestRide = () => {
   );
 };
 
-export default BookFreeTestRide;
+export default ContactUs;

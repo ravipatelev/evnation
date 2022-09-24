@@ -20,14 +20,15 @@ const Footer = () => {
             />
           </Link>
           <p className="text-white me-5 margin768">
-            PURE is committed to drive the future of e-mobility and energy
-            storage systems. We design and manufacture EVs and Lithium
-            batteries.
+            EVnation is committed to create awareness regarding Electrical
+            (Battery) Scooters and helping India GO GREEN !!
+            <br /> Let's Electrify your ride with battery !!
           </p>
           <div className="fs-5 mt-1 margin992">
             <a
               href="https://wa.me/918233024290"
               target="_blank"
+              rel="noreferrer"
               className="me-5 margin399"
             >
               <i className="bi bi-whatsapp text-white myBi"></i>
@@ -35,6 +36,7 @@ const Footer = () => {
             <a
               href="https://wa.me/918233024290"
               target="_blank"
+              rel="noreferrer"
               className="me-5 margin399"
             >
               <i className="bi bi-facebook text-white myBi"></i>
@@ -42,6 +44,7 @@ const Footer = () => {
             <a
               href="https://wa.me/918233024290"
               target="_blank"
+              rel="noreferrer"
               className="me-5 margin399"
             >
               <i className="bi bi-instagram text-white myBi"></i>
@@ -49,6 +52,7 @@ const Footer = () => {
             <a
               href="https://wa.me/918233024290"
               target="_blank"
+              rel="noreferrer"
               className="me-5 margin399"
             >
               <i className="bi bi-twitter text-white myBi"></i>
@@ -56,16 +60,11 @@ const Footer = () => {
           </div>
           <div className="mt-4">
             <p>Authorized District Dealer of Okinawa Scooters</p>
-            <Link
-              to="/"
-              className="d-flex mb-3 text-white text-decoration-none"
-            >
-              <ProgressiveImage
-                src="https://drive.google.com/uc?export=view&id=1kXrIRbqJmckLcegB8Yrg45H9-sQf4asP"
-                alt="logo"
-                className="footerLogo"
-              />
-            </Link>
+            <ProgressiveImage
+              src="https://drive.google.com/uc?export=view&id=1kXrIRbqJmckLcegB8Yrg45H9-sQf4asP"
+              alt="okinawa logo"
+              className="footerLogo"
+            />
           </div>
         </div>
 
@@ -153,8 +152,9 @@ const Footer = () => {
             </div>
             <div className="d-flex mb-3 myHover position768">
               <a
-                href="https://goo.gl/maps/cy2LsJPHZirugUjp6"
+                href="https://maps.app.goo.gl/F33SZH7M4HWp1MDr5"
                 target="_blank"
+                rel="noreferrer"
                 className="d-flex text-white text-decoration-none myHover"
               >
                 <li>
@@ -169,7 +169,7 @@ const Footer = () => {
           </ul>
           {/* <p>Timings: 9:00 AM - 8:30 PM</p> */}
           <div className="text-end position768 feedback576">
-            <Link to="/" className="btn myButton">
+            <Link to="/feedback" className="btn myButton">
               FEEDBACK
             </Link>
           </div>

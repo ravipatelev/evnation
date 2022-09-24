@@ -228,7 +228,8 @@ const ModelsData = [
     SideStandSensor: "",
     Speed: "25 kmph",
     Speedometer: "Digital",
-    Suspension: "Front: Hydraulic Telescopic | Rear: Double Shocker with dual tube technology",
+    Suspension:
+      "Front: Hydraulic Telescopic | Rear: Double Shocker with dual tube technology",
     Tyre: "3-10 Tubeless (Front/Rear)",
     Voltage: "",
     Wheel: "Stylish Aluminium Alloy Wheel",
@@ -272,7 +273,8 @@ const ModelsData = [
     SideStandSensor: "",
     Speed: "25 kmph",
     Speedometer: "Digital",
-    Suspension: "Front: Telescopic Suspension | Rear: Dual Tube Spring type hydraulic shockers",
+    Suspension:
+      "Front: Telescopic Suspension | Rear: Dual Tube Spring type hydraulic shockers",
     Tyre: "3-10 Tubeless (Front/Rear)",
     Voltage: "",
     Wheel: "Stylish Aluminum Alloy Wheel",

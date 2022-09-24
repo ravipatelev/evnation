@@ -100,3 +100,8 @@
     margin: 0 10% !important;
   }
 }
+@media screen and (max-width: 354px) {
+  .absolutePaddingBottomHome {
+    padding-bottom: 230px;
+  }
+}

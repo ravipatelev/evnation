@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 
 * {
   margin: 0;
@@ -29,7 +29,7 @@ html {
   width: 40%;
 }
 
-.bgLightBlue{
+.bgLightBlue {
   background: #f0e1e4;
 }
 

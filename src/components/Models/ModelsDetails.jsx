@@ -41,7 +41,7 @@ const ModelsDetails = () => {
                 <img
                   src={item.ImgSrc}
                   className="card-img-top"
-                  alt="Model Image"
+                  alt="model img"
                 />
               </div>
               <div className="col-md-4 col-sm-12 pt-5 dNone768">
@@ -137,7 +137,7 @@ const ModelsDetails = () => {
 
           {/* Model Details */}
           <div className="px-3">
-            <h3 className="mt-5 mb-4">Description: / Details:</h3>
+            <h3 className="mt-5 mb-4">Details:</h3>
             <dl className="row mb-5">
               {item.RangeCharge && (
                 <dt className="col-md-3 col-sm-6">Range Charge</dt>

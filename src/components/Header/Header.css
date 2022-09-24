@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 767px) {
   .navbar {
-    margin: 0 10px !important;
+    margin: 0 20px !important;
   }
 
   /* .myImg {
@@ -96,3 +96,84 @@
     width: 80%;
   }
 } */
+
+@media screen and (max-width: 991px) {
+  .evLogo {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 891px) {
+  .evLogo {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 791px) {
+  .evLogo {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 691px) {
+  .evLogo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 651px) {
+  .evLogo {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .evLogo {
+    width: 115%;
+  }
+}
+@media screen and (max-width: 591px) {
+  .evLogo {
+    width: 120%;
+  }
+}
+@media screen and (max-width: 571px) {
+  .evLogo {
+    width: 130%;
+  }
+}
+@media screen and (max-width: 531px) {
+  .evLogo {
+    width: 140%;
+  }
+}
+@media screen and (max-width: 501px) {
+  .evLogo {
+    width: 150%;
+  }
+}
+@media screen and (max-width: 461px) {
+  .evLogo {
+    width: 160%;
+  }
+}
+@media screen and (max-width: 441px) {
+  .evLogo {
+    width: 170%;
+  }
+}
+@media screen and (max-width: 421px) {
+  .evLogo {
+    width: 180%;
+  }
+}
+@media screen and (max-width: 401px) {
+  .evLogo {
+    width: 190%;
+  }
+}
+@media screen and (max-width: 371px) {
+  .evLogo {
+    width: 200%;
+  }
+}
+@media screen and (max-width: 361px) {
+  .evLogo {
+    width: 210%;
+  }
+}

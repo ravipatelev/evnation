@@ -17,11 +17,11 @@ const Home = () => {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1200, min: 464 },
+      breakpoint: { max: 1200, min: 672 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 672, min: 0 },
       items: 1,
     },
   };
@@ -34,26 +34,21 @@ const Home = () => {
             <h3>
               Authorized District Dealer <br /> of Okinawa Scooters
             </h3>
-            <Link
-              to="/"
-              className="d-flex mb-3 text-white text-decoration-none"
-            >
-              <ProgressiveImage
-                src="https://drive.google.com/uc?export=view&id=1AL5gb1HVgoQYGiyVo4JByO1kDkuQQyeg"
-                alt="logo"
-                className="w-40"
-              />
-            </Link>
+            <ProgressiveImage
+              src="https://drive.google.com/uc?export=view&id=1AL5gb1HVgoQYGiyVo4JByO1kDkuQQyeg"
+              alt="okinawa logo"
+              className="w-40"
+            />
           </div>
           <h1 className="p-4">
-            Let's <span className="textEvGreen">Electrify</span> your ride <br />{" "}
-            with <span className="textEvBlue">battery</span> !!
+            Let's <span className="textEvGreen">Electrify</span> your ride
+            <br /> with <span className="textEvBlue">battery</span> !!
           </h1>
         </div>
 
         <img
           src="https://okinawascooters.com/wp-content/uploads/2022/03/okhi-90-red.jpg"
-          alt=""
+          alt="front page img"
           className="col-lg-6 col-sm-12 img-fluid"
         />
       </div>

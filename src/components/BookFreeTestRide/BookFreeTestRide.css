@@ -1,0 +1,23 @@
+.calcImgWidth {
+  width: 100%;
+}
+
+/* @media screen and (max-width: 992px) {
+  .freeRideContainer {
+    padding: inherit 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .px-5 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .calcImgWidth {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 25px;
+  }
+}

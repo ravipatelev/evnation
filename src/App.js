@@ -15,6 +15,7 @@ import Blogs from "./components/Blogs/Blogs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import TnC from "./components/TnC/TnC";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
+import Feedback from "./components/Feedback/Feedback";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
@@ -56,11 +57,13 @@ const App = () => {
             <Route exact path="/blogs" component={Blogs} />
             <Route exact path="/privacy-policy" component={PrivacyPolicy} />
             <Route exact path="/tnc" component={TnC} />
+            <Route exact path="/feedback" component={Feedback} />
             <Route path="*" component={Four04} />
           </Switch>
           <a
             href="https://wa.me/918233024290"
             target="_blank"
+            rel="noreferrer"
             className="whatsapp"
           >
             <i className="bi bi-whatsapp fs-4"></i>

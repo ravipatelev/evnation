@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
@@ -8,6 +8,7 @@ const Header = () => {
     var nav = document.getElementById("navbarSupportedContent");
     var btn = document.getElementById("menuBtn");
     nav.classList.remove("show");
+    nav.classList.add("collapse");
     btn.classList.add("collapsed");
   };
 
@@ -38,7 +39,8 @@ const Header = () => {
           </button>
         </div>
         <div
-          className="collapse navbar-collapse justify-content-end"
+          // className="collapse"
+          className="navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav justify-content-center">
