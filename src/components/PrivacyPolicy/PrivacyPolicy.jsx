@@ -2,10 +2,8 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container py-4">
-      <h1 className="pb-3">
-        Privacy Policy
-      </h1>
+    <div className="container py-3 px-4">
+      <h1 className="pb-3">Privacy Policy</h1>
       <p>Effective Date: 1st September 2022</p>
       <p>
         1. <b>Introduction</b>
@@ -162,22 +160,6 @@ const PrivacyPolicy = () => {
       <p>
         0.4. <b>Advertising Cookies:</b> Advertising Cookies are used to serve
         you with advertisements that may be relevant to you and your interests.
-      </p>
-      <p>
-        <b>Other Data</b>
-      </p>
-      <p>
-        While using our Service, we may also collect the following information:
-        sex, age, date of birth, place of birth, passport details, citizenship,
-        registration at place of residence and actual address, telephone number
-        (work, mobile), details of documents on education, qualification,
-        professional training, employment agreements,{" "}
-        <a href="https://policymaker.io/non-disclosure-agreement/">
-          NDA agreements
-        </a>
-        , information on bonuses and compensation, information on marital
-        status, family members, social security (or other taxpayer
-        identification) number, office location and other data.
       </p>
       <p>
         5. <b>Use of Data</b>
@@ -570,20 +552,6 @@ const PrivacyPolicy = () => {
       <p>
         We have no control over and assume no responsibility for the content,
         privacy policies or practices of any third party sites or services.
-      </p>
-      <p>
-        For example, the outlined{" "}
-        <a href="https://policymaker.io/privacy-policy/">privacy policy</a> has
-        been made using <a href="https://policymaker.io/">PolicyMaker.io</a>, a
-        free tool that helps create high-quality legal documents. PolicyMaker’s{" "}
-        <a href="https://policymaker.io/privacy-policy/">
-          privacy policy generator
-        </a>{" "}
-        is an easy-to-use tool for creating a{" "}
-        <a href="https://policymaker.io/blog-privacy-policy/">
-          privacy policy for blog
-        </a>
-        , website, e-commerce store or mobile app.
       </p>
       <p>
         19.{" "}

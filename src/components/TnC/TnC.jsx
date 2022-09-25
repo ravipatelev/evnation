@@ -2,7 +2,7 @@ import React from "react";
 
 const TnC = () => {
   return (
-    <div className="container py-4">
+    <div className="container py-3 px-4">
       <h1 className="pb-3">Terms and Conditions</h1>
       <p>Effective Date: 1st September 2022</p>
       <p>
@@ -19,8 +19,8 @@ const TnC = () => {
       </p>
       <h5>Definitions</h5>
       <p>For the purposes of these Terms and Conditions:</p>
-      <ul>
-        <li>
+      <ul >
+        <li className="text-start">
           <p>
             <strong>Affiliate</strong> means an entity that controls, is
             controlled by or is under common control with a party, where
@@ -29,12 +29,12 @@ const TnC = () => {
             directors or other managing authority.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Country</strong> refers to: Rajasthan, India
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Company</strong> (referred to as either &quot;the
             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
@@ -42,18 +42,18 @@ const TnC = () => {
             Wale Baba Chauraha, Kota(Rajasthan), 324007.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Device</strong> means any device that can access the Service
             such as a computer, a cellphone or a digital tablet.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Service</strong> refers to the Website.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Terms and Conditions</strong> (also referred as
             &quot;Terms&quot;) mean these Terms and Conditions that form the
@@ -61,7 +61,7 @@ const TnC = () => {
             the Service.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Third-party Social Media Service</strong> means any services
             or content (including data, information, products or services)
@@ -69,19 +69,14 @@ const TnC = () => {
             available by the Service.
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>Website</strong> refers to EVnation, accessible from{" "}
-            <a
-              href="evnation.in"
-              rel="external nofollow noopener"
-              target="_blank"
-            >
-              evnation.in
-            </a>
+            
+              <b> evnation.in</b>
           </p>
         </li>
-        <li>
+        <li className="text-start">
           <p>
             <strong>You</strong> means the individual accessing or using the
             Service, or the company, or other legal entity on behalf of which

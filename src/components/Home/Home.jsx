@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ModelsData from "../../Constants/ModelsData";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import { menuMarginContext } from "../../App";
 
 const Home = () => {
+  const [menuMargin] = useContext(menuMarginContext);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -27,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container mt-3 pb-5">
+    <div className={menuMargin ? "container mt-3 pb-5 pageMargin" : "container mt-3 pb-5"}>
       <div className="row mb-4 margin576">
         <div className="col-lg-6 col-sm-12 my-auto pb-5 text-center">
           <div className="mt-4">
@@ -45,7 +47,6 @@ const Home = () => {
             <br /> with <span className="textEvBlue">battery</span> !!
           </h1>
         </div>
-
         <img
           src="https://okinawascooters.com/wp-content/uploads/2022/03/okhi-90-red.jpg"
           alt="front page img"
@@ -60,7 +61,7 @@ const Home = () => {
               <Link to={item.Url} className="text-decoration-none text-dark">
                 <img
                   src={item.ImgSrc}
-                  className="card-img-top absolutePaddingBottomHome"
+                  className="card-img-top absolutePaddingBottomHome mt-3"
                   alt={item.Name}
                 />
                 <div className="fixed-bottom position-absolute zIndexM">

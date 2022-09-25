@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import "./BookFreeTestRide.css"
+import "./BookFreeTestRide.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const BookFreeTestRide = () => {
@@ -40,17 +40,19 @@ const BookFreeTestRide = () => {
   };
 
   return (
-    <div className="container freeRideContainer py-4">
-      <h1 className="text-center pb-4 mb-3">Book{" "}
-        <span className="textEvGreen">Free</span>{" "}Test{" "}
-        <span className="textEvBlue">Ride</span>
+    <div className="container freeRideContainer py-4 pb-5">
+      <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
+        Book <span className="textEvGreen">Free</span> Test{" "}
+        <span className="textEvBlue">Drive</span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">
-          <p className="fw-bold fs-4 text-center pb-3">Let's drive it!</p>
+          <p className="fw-bold fs-4 text-center pb-3 freeRideContainerp">
+            Let's drive it!
+          </p>
           <ProgressiveImage
-            src="https://drive.google.com/uc?export=view&id=1cIuEDjFMj9lExM2N8MFOa9-Yrbt6KWhs"
-            alt="contact us image"
+            src="https://drive.google.com/uc?export=view&id=1eiaKkX5-K_XPodc6BUU1DwIXhA0qfxH3"
+            alt="test drive img"
             className="col-md-12 calcImgWidth"
           />
         </div>
@@ -141,18 +143,28 @@ const BookFreeTestRide = () => {
                   )}
 
                   {!valid && (
-                    <button className="btn btn-info mt-3" type="submit">
-                      Book now
-                    </button>
+                    <div className="text-center">
+                      <button className="btn myButton mt-3" type="submit">
+                        Book now
+                      </button>
+                    </div>
                   )}
                 </div>
               )}
               {submitted && valid && (
-                <div>
-                  <p>We have received your response.</p>
-                  <Link to="/" className="btn btn-info">
-                    Return to Home
-                  </Link>
+                <div className="text-center">
+                  <div className="fs-4">
+                    <p>We have received your response.</p>
+                    <p>
+                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvBlue">you!</span>
+                    </p>
+                  </div>
+                  <div className="pt-2">
+                    <Link to="/" className="btn myButton">
+                      Return to Home
+                    </Link>
+                  </div>
                 </div>
               )}
             </form>

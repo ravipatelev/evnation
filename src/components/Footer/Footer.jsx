@@ -24,7 +24,7 @@ const Footer = () => {
             (Battery) Scooters and helping India GO GREEN !!
             <br /> Let's Electrify your ride with battery !!
           </p>
-          <div className="fs-5 mt-1 margin992">
+          <div className="fs-5 mt-1">
             <a
               href="https://wa.me/918233024290"
               target="_blank"
@@ -58,7 +58,7 @@ const Footer = () => {
               <i className="bi bi-twitter text-white myBi"></i>
             </a>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 marginBottom992">
             <p>Authorized District Dealer of Okinawa Scooters</p>
             <ProgressiveImage
               src="https://drive.google.com/uc?export=view&id=1kXrIRbqJmckLcegB8Yrg45H9-sQf4asP"

@@ -40,29 +40,20 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container py-5">
+    <div className="container contactUsContainer pt-3 pb-5">
+      <h1 className="text-center contactUsContainerh1 pb-4 mb-3">
+        <span className="textEvGreen">Contact</span>{" "}
+        <span className="textEvBlue">Us</span>
+      </h1>
       <div className="row">
         <div className="col-md-6 px-5">
-          <p className="fw-bold fs-4 text-center pb-3">We're here for you!</p>
-          {/* <ProgressiveImage
-          src="https://drive.google.com/uc?export=view&id=1-V82H21MWb7Sil-_bQlhT-KjsUFSNFyG"
-          alt="contact us image"
-          className="col-md-12"
-        /> */}
-          {/* <ProgressiveImage
-          src="https://drive.google.com/uc?export=view&id=12t_diNLhqEiL1sX_JFmiDLBEvW-nTpHV"
-          alt="contact us image"
-          className="col-md-12"
-        /> */}
-          {/* <ProgressiveImage
-          src="https://drive.google.com/uc?export=view&id=1Q24q-1ZvbrGwKU8jdNbNDInzDpt59Wgq"
-          alt="contact us image"
-          className="col-md-12"
-        /> */}
+          <p className="fw-bold fs-4 text-center pb-3 contactUsContainerp">
+            We're here for you!
+          </p>
           <ProgressiveImage
-            src="https://drive.google.com/uc?export=view&id=1zdhL3xWoYQsmGkPn1ELxO4uYBDqE0JCp"
+            src="https://drive.google.com/uc?export=view&id=13onvG-otnOlWmMSx-pnfoZXqPZuPo3Z9"
             alt="contact us image"
-            className="col-md-12"
+            className="col-md-12 calcImgWidth"
           />
         </div>
         <div className="col-md-6 px-5">
@@ -151,18 +142,31 @@ const ContactUs = () => {
                   )}
 
                   {!valid && (
-                    <button className="btn myButton fw-normal mt-3" type="submit">
-                      Send Message
-                    </button>
+                    <div className="text-center">
+                      <button
+                        className="btn myButton fw-normal mt-3"
+                        type="submit"
+                      >
+                        Send Message
+                      </button>
+                    </div>
                   )}
                 </div>
               )}
               {submitted && valid && (
-                <div>
-                  <p>We have received your response.</p>
-                  <Link to="/" className="btn btn-info">
-                    Return to Home
-                  </Link>
+                <div className="text-center">
+                  <div className="fs-4">
+                    <p>We have received your response.</p>
+                    <p>
+                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvBlue">you!</span>
+                    </p>
+                  </div>
+                  <div className="pt-2">
+                    <Link to="/" className="btn myButton">
+                      Return to Home
+                    </Link>
+                  </div>
                 </div>
               )}
             </form>

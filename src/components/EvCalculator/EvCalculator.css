@@ -17,10 +17,6 @@
   height: auto;
 }
 
-.savingsBorder {
-  border: 2px solid var(--ev-green);
-}
-
 .bgYellowGradient {
   background: linear-gradient(#ffdd00, #fbb034);
 }
@@ -37,7 +33,9 @@
 }
 
 .myButtonR:hover,
-.myButtonR.active {
+.myButtonR:focus,
+.myButtonR:active,
+.myButtonR.visited {
   color: var(--primary-blue);
   background: var(--primary-blue);
   border: 3px solid var(--primary-blue);
@@ -108,15 +106,10 @@
 }
 
 @media screen and (max-width: 577px) {
-
   .mydNone {
     display: none;
   }
 
-  /* .calcContainer{
-    padding-left: 50px !important;
-    padding-right: 50px !important;
-  } */
   .table1dNone {
     display: block;
   }
@@ -129,22 +122,11 @@
 }
 
 @media screen and (max-width: 392px) {
-
-  /* .calcContainer{
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  } */
   .fs-7 {
     font-size: 10px;
   }
 }
 
-/* @media screen and (max-width: 372px) {
-  .calcContainer{
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-} */
 @media screen and (max-width: 355px) {
   .table2 {
     padding: 0 !important;

@@ -9,7 +9,6 @@
   --primary-blue: #18dbed;
   --ev-green: #36b680;
   --ev-blue: #0898d9;
-  /* font-size: 1.1rem; */
 }
 
 html {
@@ -48,7 +47,6 @@ html {
   left: 0;
   width: 100%;
   z-index: 10000;
-  /* background: #31373e; */
 }
 
 .myFooter {

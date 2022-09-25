@@ -141,12 +141,12 @@ const EvCalculator = () => {
         <span className="textEvGreen">Savings</span>{" "}
         <span className="textEvBlue">Calculator</span>
       </h1>
-      <form className="" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         {initialState && (
           <div className="row">
             <div className="col-md-6 px-5">
               <ProgressiveImage
-                src="https://drive.google.com/uc?export=view&id=1GVWQT6CNJ5rS6EWECOQmyqiquV2NNn8T"
+                src="https://drive.google.com/uc?export=view&id=1voTP2X3vHr-p-plqEjyGFNEJBlN70z4e"
                 alt="contact us image"
                 className="calcImgWidth"
               />
@@ -251,9 +251,11 @@ const EvCalculator = () => {
               )}
 
               {!valid && (
-                <button className="btn myButton fw-normal mt-3" type="submit">
-                  Compare
-                </button>
+                <div className="text-center">
+                  <button className="btn myButton fw-normal mt-3" type="submit">
+                    Compare
+                  </button>
+                </div>
               )}
             </div>
           </div>
@@ -290,7 +292,7 @@ const EvCalculator = () => {
                       </tbody>
                     </table>
                   </div>
-                  
+
                   <div className="col-md-4 col-sm-4 col-6 table2">
                     <table className="table m-3 table-bordered text-center">
                       <thead>
@@ -301,7 +303,7 @@ const EvCalculator = () => {
                                 <i className="bi bi-fuel-pump fs-2"></i>
                               </div>
                               <div className="col-md-9">
-                                Conventional <br /> Vehicle
+                                Petrol <br /> Vehicle
                               </div>
                             </div>
                           </th>
@@ -315,6 +317,7 @@ const EvCalculator = () => {
                             </small>
                             {Math.round((costPerKmCv + Number.EPSILON) * 100) /
                               100}
+                              <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
                         <tr className="fs-5">
@@ -322,9 +325,10 @@ const EvCalculator = () => {
                             <small className="table1dNone fs-7">
                               Annual Fuel Cost <br />
                             </small>
-                            {Math.round(
+                            {(Math.round(
                               (annualFuelCostCv + Number.EPSILON) * 100
-                            ) / 100}
+                            ) / 100).toLocaleString()}
+                            <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
                       </tbody>
@@ -341,7 +345,9 @@ const EvCalculator = () => {
                               <div className="col-md-3">
                                 <i className="bi bi-ev-station fs-2"></i>
                               </div>
-                              <div className="col-md-6">Electric <br /> Vehicle</div>
+                              <div className="col-md-6">
+                                Electric <br /> Vehicle
+                              </div>
                             </div>
                           </th>
                         </tr>
@@ -352,8 +358,8 @@ const EvCalculator = () => {
                             <small className="table1dNone fs-7">
                               Cost per km <br />
                             </small>
-                            {Math.round((costPerKmEv + Number.EPSILON) * 100) /
-                              100}
+                            {" "}
+                            {Math.round((costPerKmEv + Number.EPSILON) * 100)} Paisa
                           </th>
                         </tr>
                         <tr className="fs-5">
@@ -361,9 +367,10 @@ const EvCalculator = () => {
                             <small className="table1dNone fs-7">
                               Annual Fuel Cost <br />
                             </small>
-                            {Math.round(
+                            {(Math.round(
                               (annualFuelCostEv + Number.EPSILON) * 100
-                            ) / 100}
+                            ) / 100).toLocaleString()}
+                            <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
                       </tbody>
@@ -372,17 +379,17 @@ const EvCalculator = () => {
                 </div>
 
                 <div className="row centerVertically">
-                  <div className="col-md-1"></div>
-                  <div className="col-md-4 m-0 p-0 savingsImg">
+                  <div className="col-md-1 col-sm-0"></div>
+                  <div className="col-md-4 col-sm-12 m-0 p-0 savingsImg">
                     <ProgressiveImage
                       src="https://drive.google.com/uc?export=view&id=1jRcr_Fnpb2ngWL9PyZf7RcT51cnJt7xY"
                       alt="savings image"
                       className="savingsWidth"
                     />
                   </div>
-                  <div className="col-md-7 text-center">
+                  <div className="col-md-7 col-sm-12 text-center">
                     <h4 className="fw-bold">Your Annual Savings</h4>
-                    <div className="btn btn-dark myTextSuccess fw-bold fs-4 savingsBorder myButtonR">
+                    <div className="btn myButtonR fw-bold fs-4">
                       <i className="bi bi-currency-rupee"></i>
                       {(
                         Math.round(

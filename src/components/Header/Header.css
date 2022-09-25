@@ -13,7 +13,7 @@
 
 .nav-link:after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: 3px solid var(--primary-blue);
   transform: scaleX(0);
   transition: transform 0.4s ease-in-out;
@@ -33,11 +33,12 @@
   background: var(--primary-blue);
   border: 2px solid var(--primary-blue);
   font-weight: bold;
-  /* box-shadow: 0 0; */
 }
 
 .myButton:hover,
-.myButton.active {
+.myButton:focus,
+.myButton.active,
+.myButton.visited {
   color: var(--primary-blue);
   background: #212529 !important;
   border: 2px solid var(--primary-blue);
@@ -69,109 +70,98 @@
   .navbar {
     margin: 0 20px !important;
   }
-
-  /* .myImg {
-    width: 50%;
-  } */
-
-  /* .hoverMedia:after {
-    display: block;
-    content: '';
-    border-bottom: 3px solid var(--primary-blue);
-    transform: scaleX(0);
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .hoverMedia:hover:after {
-    transform: scaleX(0.1);
-  }
-
-  .nav-link:after {
-    border-bottom: 0px solid transparent;
-  } */
 }
-
-/* @media screen and (max-width: 500px) {
-  .myImg {
-    width: 80%;
-  }
-} */
 
 @media screen and (max-width: 991px) {
   .evLogo {
     width: 80%;
   }
 }
+
 @media screen and (max-width: 891px) {
   .evLogo {
     width: 90%;
   }
 }
+
 @media screen and (max-width: 791px) {
   .evLogo {
     width: 95%;
   }
 }
+
 @media screen and (max-width: 691px) {
   .evLogo {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 651px) {
   .evLogo {
     width: 110%;
   }
 }
+
 @media screen and (max-width: 601px) {
   .evLogo {
     width: 115%;
   }
 }
+
 @media screen and (max-width: 591px) {
   .evLogo {
     width: 120%;
   }
 }
+
 @media screen and (max-width: 571px) {
   .evLogo {
     width: 130%;
   }
 }
+
 @media screen and (max-width: 531px) {
   .evLogo {
     width: 140%;
   }
 }
+
 @media screen and (max-width: 501px) {
   .evLogo {
     width: 150%;
   }
 }
+
 @media screen and (max-width: 461px) {
   .evLogo {
     width: 160%;
   }
 }
+
 @media screen and (max-width: 441px) {
   .evLogo {
     width: 170%;
   }
 }
+
 @media screen and (max-width: 421px) {
   .evLogo {
     width: 180%;
   }
 }
+
 @media screen and (max-width: 401px) {
   .evLogo {
     width: 190%;
   }
 }
+
 @media screen and (max-width: 371px) {
   .evLogo {
     width: 200%;
   }
 }
+
 @media screen and (max-width: 361px) {
   .evLogo {
     width: 210%;

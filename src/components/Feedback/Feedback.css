@@ -1,13 +1,18 @@
 .calcImgWidth {
-    width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .calcImgWidth {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 25px;
   }
-  
- 
-  
-  @media screen and (max-width: 768px) {
-    .calcImgWidth {
-      width: 50%;
-      margin-left: 25%;
-      padding-bottom: 25px;
-    }
+}
+
+@media screen and (max-width: 576px) {
+  .feedbackContainer {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
+}

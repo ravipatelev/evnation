@@ -40,17 +40,17 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container py-4">
+    <div className="container feedbackContainer pt-3 pb-5">
       <h1 className="text-center pb-4 mb-3">
         <span className="textEvGreen">Feedback</span>
         <span className="textEvBlue"></span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">
-          <p className="fw-bold fs-4 text-center pb-3">We're here for you!</p>
+          {/* <p className="fw-bold fs-4 text-center pb-3">We're here for you!</p> */}
           <ProgressiveImage
-            src="https://drive.google.com/uc?export=view&id=1zdhL3xWoYQsmGkPn1ELxO4uYBDqE0JCp"
-            alt="feedback image"
+            src="https://drive.google.com/uc?export=view&id=18-TFDE7RZ39fCaZpjj4G-Y-1MZF7yHA-"
+            alt="feedback img"
             className="col-md-12 calcImgWidth"
           />
         </div>
@@ -112,21 +112,31 @@ const ContactUs = () => {
                   )}
 
                   {!valid && (
-                    <button
-                      className="btn myButton fw-normal mt-3"
-                      type="submit"
-                    >
-                      Send Feedback
-                    </button>
+                    <div className="text-center">
+                      <button
+                        className="btn myButton fw-normal mt-3"
+                        type="submit"
+                      >
+                        Send Feedback
+                      </button>
+                    </div>
                   )}
                 </div>
               )}
               {submitted && valid && (
-                <div>
-                  <p>We have received your response.</p>
-                  <Link to="/" className="btn btn-info">
-                    Return to Home
-                  </Link>
+                <div className="text-center">
+                  <div className="fs-4">
+                    <p>We have received your response.</p>
+                    <p>
+                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvBlue">you!</span>
+                    </p>
+                  </div>
+                  <div className="pt-2">
+                    <Link to="/" className="btn myButton">
+                      Return to Home
+                    </Link>
+                  </div>
                 </div>
               )}
             </form>
