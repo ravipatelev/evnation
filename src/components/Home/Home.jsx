@@ -64,7 +64,7 @@ const Home = () => {
                   className="card-img-top absolutePaddingBottomHome mt-3"
                   alt={item.Name}
                 />
-                <div className="fixed-bottom position-absolute zIndexM">
+                <div className="fixed-bottom position-absolute zIndexM text-start">
                   <div className="card-body">
                     <p className="card-text">
                       Range: <b>{item.RangeCharge}</b>
