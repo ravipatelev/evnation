@@ -29,3 +29,21 @@
 .nthChild:nth-child(7) img {
   padding-top: 5px;
 }
+
+@media screen and (max-width: 1200px) {
+  .absolutePaddingBottom {
+    padding-bottom: 235px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pageMargin {
+    margin-top: 200px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .absolutePaddingBottom {
+    padding-bottom: 175px;
+  }
+}

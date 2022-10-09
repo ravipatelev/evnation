@@ -31,7 +31,6 @@ html {
 .bgLightBlue {
   background: #f0e1e4;
 }
-
 /* common classes */
 
 #app {
@@ -72,8 +71,14 @@ html {
   color: black;
 }
 
-@media screen and (max-width: 306px) {
+.comingSoon{
+  line-height: 40vh;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* @media screen and (max-width: 306px) {
   * {
     display: none;
   }
-}
+} */

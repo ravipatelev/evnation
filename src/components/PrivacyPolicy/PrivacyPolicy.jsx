@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { menuMarginContext } from "../../App";
 
 const PrivacyPolicy = () => {
+  const [menuMargin] = useContext(menuMarginContext);
+
   return (
-    <div className="container py-3 px-4">
+    <div className={menuMargin ? "container py-3 px-4 pageMargin" : "container py-3 px-4"}>
       <h1 className="pb-3">Privacy Policy</h1>
       <p>Effective Date: 1st September 2022</p>
       <p>

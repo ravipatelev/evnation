@@ -3,20 +3,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .calcImgWidth {
-    width: 50%;
-    margin-left: 25%;
-    padding-bottom: 25px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .freeRideContainerh1,
   .freeRideContainerp {
     padding: 0 !important;
   }
+
   .freeRideContainer {
     padding-top: 10px !important;
+  }
+
+  .calcImgWidth {
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 25px;
   }
 }
 

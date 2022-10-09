@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import { menuMarginContext } from "../../App";
+import S3_IMAGES from "../../Constants/S3Images";
 
 const Header = () => {
   const [menuMargin, setMenuMargin] = useContext(menuMarginContext);
@@ -38,6 +39,9 @@ const Header = () => {
     btnClassAdd
       ? btn.classList.add("collapsed")
       : btn.classList.remove("collapsed");
+
+    // if we want to scroll to top when user clicks on menu button
+    // window.scrollTo(0, 0);
   };
 
   return (
@@ -46,8 +50,23 @@ const Header = () => {
         <div className="text-decoration-none w-25">
           <NavLink to="/" onClick={handleCollapse}>
             <ProgressiveImage
-              src="https://drive.google.com/uc?export=view&id=1Cy07IA9ERJ0knoMTxZ9HOA8Y2ACoadI-"
-              alt="logo"
+              src={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN +
+                "/" +
+                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
+                ".png"
+              }
+              reducedImgSrc={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                "/" +
+                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
+                ".png"
+              }
+              alt="evnation logo"
               className="evLogo"
             />
           </NavLink>
@@ -84,7 +103,7 @@ const Header = () => {
             <li>
               <NavLink
                 onClick={handleMenuMargin}
-                to="/ev_calculator"
+                to="/ev-calculator"
                 className="nav-link text-white fromLeft"
               >
                 <span className="hoverMedia">Savings Calculator</span>
@@ -102,7 +121,7 @@ const Header = () => {
             <li className="mx-4 freeRide992">
               <NavLink
                 onClick={handleMenuMargin}
-                to="/book_free_test_ride"
+                to="/book-free-test-ride"
                 type="button"
                 className="btn myButton"
               >

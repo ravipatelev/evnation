@@ -33,11 +33,11 @@ const App = () => {
             </div>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/ev_calculator" component={EvCalculator} />
+              <Route exact path="/ev-calculator" component={EvCalculator} />
               <Route exact path="/models" component={Models} />
               <Route
                 exact
-                path="/book_free_test_ride"
+                path="/book-free-test-ride"
                 component={BookFreeTestRide}
               />
               <Route exact path="/models/okhi-90" component={ModelsDetails} />

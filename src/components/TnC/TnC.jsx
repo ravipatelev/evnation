@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { menuMarginContext } from "../../App";
 
 const TnC = () => {
+  const [menuMargin] = useContext(menuMarginContext);
+
   return (
-    <div className="container py-3 px-4">
+    <div
+      className={
+        menuMargin ? "container py-3 px-4 pageMargin" : "container py-3 px-4"
+      }
+    >
       <h1 className="pb-3">Terms and Conditions</h1>
       <p>Effective Date: 1st September 2022</p>
       <p>
@@ -19,7 +26,7 @@ const TnC = () => {
       </p>
       <h5>Definitions</h5>
       <p>For the purposes of these Terms and Conditions:</p>
-      <ul >
+      <ul>
         <li className="text-start">
           <p>
             <strong>Affiliate</strong> means an entity that controls, is
@@ -72,8 +79,7 @@ const TnC = () => {
         <li className="text-start">
           <p>
             <strong>Website</strong> refers to EVnation, accessible from{" "}
-            
-              <b> evnation.in</b>
+            <b> evnation.in</b>
           </p>
         </li>
         <li className="text-start">

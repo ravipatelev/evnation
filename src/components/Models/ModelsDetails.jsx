@@ -1,8 +1,11 @@
-import React from "react";
-import "./ModelsDetails.css"
+import React, { useContext } from "react";
+import "./ModelsDetails.css";
 import ModelsData from "../../Constants/ModelsData";
+import { menuMarginContext } from "../../App";
+import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const ModelsDetails = () => {
+  const [menuMargin] = useContext(menuMarginContext);
   let constant = window.location.pathname.replace(/\/models\/|-/g, ""),
     sliceA,
     sliceB;
@@ -31,17 +34,24 @@ const ModelsDetails = () => {
   }
 
   return (
-    <div className="container text-break mt-3">
+    <div
+      className={
+        menuMargin
+          ? "container text-break mt-3 pageMargin"
+          : "container text-break mt-3"
+      }
+    >
       {ModelsData.map((item) => (
         <div>
           <h2 className="text-center mb-5">{item.Name}</h2>
           <div className="card mb-3 border-0">
             <div className="row g-0">
               <div className="col-md-8 col-sm-12">
-                <img
+                <ProgressiveImage
                   src={item.ImgSrc}
+                  reducedImgSrc={item.reducedImgSrc}
                   className="card-img-top"
-                  alt="model img"
+                  alt={"okinawa electric scooter model " + item.Name}
                 />
               </div>
               <div className="col-md-4 col-sm-12 pt-5 dNone768">

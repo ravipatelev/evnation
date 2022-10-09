@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProgressiveImage.css";
 
-const ProgressiveImage = ({ src, ...props }) => {
+const ProgressiveImage = ({ src, reducedImgSrc, ...props }) => {
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {
@@ -15,9 +15,9 @@ const ProgressiveImage = ({ src, ...props }) => {
   return (
     <div>
       {loader ? (
-        <div className="loader"></div>
+        <img {...{ src: reducedImgSrc, ...props }} alt={props.alt || "img"} />
       ) : (
-        <img {...{ src: src, ...props }} alt={props.alt || "image"} />
+        <img {...{ src: src, ...props }} alt={props.alt || "img"} />
       )}
     </div>
   );

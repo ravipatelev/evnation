@@ -76,6 +76,10 @@
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
+  .pageMargin{
+    margin-top: 180px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {

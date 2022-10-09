@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./EvCalculator.css";
 import ModelsData from "../../Constants/ModelsData";
 import ModelsData2 from "../../Constants/ModelsData2";
+import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import { menuMarginContext } from "../../App";
 
 const EvCalculator = () => {
+  const [menuMargin] = useContext(menuMarginContext);
   const [values, setValues] = useState({
     FuelPrice: "",
     AvgMilage: "",
@@ -136,7 +139,13 @@ const EvCalculator = () => {
   };
 
   return (
-    <div className="container calcContainer pt-3 pb-5 mb-3">
+    <div
+      className={
+        menuMargin
+          ? "container calcContainer pt-3 pb-5 mb-3 pageMargin"
+          : "container calcContainer pt-3 pb-5 mb-3"
+      }
+    >
       <h1 className="text-center pb-4 mb-2">
         <span className="textEvGreen">Savings</span>{" "}
         <span className="textEvBlue">Calculator</span>
@@ -146,8 +155,23 @@ const EvCalculator = () => {
           <div className="row">
             <div className="col-md-6 px-5">
               <ProgressiveImage
-                src="https://drive.google.com/uc?export=view&id=1voTP2X3vHr-p-plqEjyGFNEJBlN70z4e"
-                alt="contact us image"
+                src={
+                  S3_IMAGES.GENEREL.S3_PATH +
+                  "/" +
+                  S3_IMAGES.S3_FOLDER.MAIN +
+                  "/" +
+                  S3_IMAGES.S3_MAIN.SAVINGS_CALCULATOR +
+                  ".jpg"
+                }
+                reducedImgSrc={
+                  S3_IMAGES.GENEREL.S3_PATH +
+                  "/" +
+                  S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                  "/" +
+                  S3_IMAGES.S3_MAIN.SAVINGS_CALCULATOR +
+                  ".jpg"
+                }
+                alt="savings calculator img"
                 className="calcImgWidth"
               />
             </div>
@@ -317,7 +341,7 @@ const EvCalculator = () => {
                             </small>
                             {Math.round((costPerKmCv + Number.EPSILON) * 100) /
                               100}
-                              <i className="bi bi-currency-rupee fw-bold"></i>
+                            <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
                         <tr className="fs-5">
@@ -325,9 +349,11 @@ const EvCalculator = () => {
                             <small className="table1dNone fs-7">
                               Annual Fuel Cost <br />
                             </small>
-                            {(Math.round(
-                              (annualFuelCostCv + Number.EPSILON) * 100
-                            ) / 100).toLocaleString()}
+                            {(
+                              Math.round(
+                                (annualFuelCostCv + Number.EPSILON) * 100
+                              ) / 100
+                            ).toLocaleString()}
                             <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
@@ -357,9 +383,9 @@ const EvCalculator = () => {
                           <th scope="row" valign="middle">
                             <small className="table1dNone fs-7">
                               Cost per km <br />
-                            </small>
-                            {" "}
-                            {Math.round((costPerKmEv + Number.EPSILON) * 100)} Paisa
+                            </small>{" "}
+                            {Math.round((costPerKmEv + Number.EPSILON) * 100)}{" "}
+                            Paisa
                           </th>
                         </tr>
                         <tr className="fs-5">
@@ -367,9 +393,11 @@ const EvCalculator = () => {
                             <small className="table1dNone fs-7">
                               Annual Fuel Cost <br />
                             </small>
-                            {(Math.round(
-                              (annualFuelCostEv + Number.EPSILON) * 100
-                            ) / 100).toLocaleString()}
+                            {(
+                              Math.round(
+                                (annualFuelCostEv + Number.EPSILON) * 100
+                              ) / 100
+                            ).toLocaleString()}
                             <i className="bi bi-currency-rupee fw-bold"></i>
                           </th>
                         </tr>
@@ -382,8 +410,23 @@ const EvCalculator = () => {
                   <div className="col-md-1 col-sm-0"></div>
                   <div className="col-md-4 col-sm-12 m-0 p-0 savingsImg">
                     <ProgressiveImage
-                      src="https://drive.google.com/uc?export=view&id=1jRcr_Fnpb2ngWL9PyZf7RcT51cnJt7xY"
-                      alt="savings image"
+                      src={
+                        S3_IMAGES.GENEREL.S3_PATH +
+                        "/" +
+                        S3_IMAGES.S3_FOLDER.MAIN +
+                        "/" +
+                        S3_IMAGES.S3_MAIN.ANNUAL_SAVINGS +
+                        ".png"
+                      }
+                      reducedImgSrc={
+                        S3_IMAGES.GENEREL.S3_PATH +
+                        "/" +
+                        S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                        "/" +
+                        S3_IMAGES.S3_MAIN.ANNUAL_SAVINGS +
+                        ".png"
+                      }
+                      alt="annual savings img"
                       className="savingsWidth"
                     />
                   </div>

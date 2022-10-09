@@ -1,3 +1,9 @@
+@media screen and (max-width: 992px) {
+  .pageMargin {
+    margin-top: 200px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .dNone768 {
     display: none;

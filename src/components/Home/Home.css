@@ -11,6 +11,10 @@
   padding-bottom: 175px;
 }
 
+.textBoxPadding{
+  padding-bottom: 50px;
+}
+
 @media screen and (max-width: 1700px) {
   .react-multi-carousel-list {
     margin: 0 !important;
@@ -41,6 +45,9 @@
   }
   .pageMargin{
     margin-top: 180px !important;
+  }
+  .textBoxPadding{
+    padding-bottom: 0px;
   }
 }
 

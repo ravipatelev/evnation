@@ -1,14 +1,20 @@
-import React from "react";
-import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import React, { useContext } from "react";
+import "./AboutUs.css";
+import { menuMarginContext } from "../../App";
 
 const AboutUs = () => {
+  const [menuMargin] = useContext(menuMarginContext);
+
   return (
-    <div className="text-center">
-      <ProgressiveImage
-        src="https://drive.google.com/uc?export=view&id=15GBdraM70fcy7tJC4zzqVQbXpEjajE6E"
-        alt="coming soon image"
-        className="w-50"
-      />
+    <div
+      className={
+        menuMargin
+          ? "text-center comingSoon pageMargin"
+          : "text-center comingSoon"
+      }
+    >
+      <span className="textEvGreen">Coming</span>{" "}
+      <span className="textEvBlue">Soon!</span>
     </div>
   );
 };

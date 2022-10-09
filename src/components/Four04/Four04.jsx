@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { menuMarginContext } from "../../App";
 
 const Four04 = () => {
-  return (
-    <div>Four04</div>
-  )
-}
+  const [menuMargin] = useContext(menuMarginContext);
 
-export default Four04
+  return (
+    <div
+      className={
+        menuMargin
+          ? "text-center comingSoon pageMargin"
+          : "text-center comingSoon"
+      }
+    >
+      <span className="textEvGreen">Page</span>{" "}
+      <span className="textEvBlue">not found!</span>
+    </div>
+  );
+};
+
+export default Four04;

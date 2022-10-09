@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ModelsData from "../../Constants/ModelsData";
+import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import { menuMarginContext } from "../../App";
 
@@ -29,16 +30,35 @@ const Home = () => {
   };
 
   return (
-    <div className={menuMargin ? "container mt-3 pb-5 pageMargin" : "container mt-3 pb-5"}>
+    <div
+      className={
+        menuMargin ? "container mt-3 pb-5 pageMargin" : "container mt-3 pb-5"
+      }
+    >
       <div className="row mb-4 margin576">
-        <div className="col-lg-6 col-sm-12 my-auto pb-5 text-center">
+        <div className="col-lg-6 col-sm-12 my-auto textBoxPadding text-center">
           <div className="mt-4">
             <h3>
               Authorized District Dealer <br /> of Okinawa Scooters
             </h3>
             <ProgressiveImage
-              src="https://drive.google.com/uc?export=view&id=1AL5gb1HVgoQYGiyVo4JByO1kDkuQQyeg"
-              alt="okinawa logo"
+              src={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN +
+                "/" +
+                S3_IMAGES.S3_MAIN.OKINAWA_LOGO_RED +
+                ".png"
+              }
+              reducedImgSrc={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                "/" +
+                S3_IMAGES.S3_MAIN.OKINAWA_LOGO_RED +
+                ".png"
+              }
+              alt="electric scooter of okinawa logo"
               className="w-40"
             />
           </div>
@@ -47,22 +67,40 @@ const Home = () => {
             <br /> with <span className="textEvBlue">battery</span> !!
           </h1>
         </div>
-        <img
-          src="https://okinawascooters.com/wp-content/uploads/2022/03/okhi-90-red.jpg"
-          alt="front page img"
-          className="col-lg-6 col-sm-12 img-fluid"
-        />
+        <div className="col-lg-6 col-sm-12">
+          <ProgressiveImage
+            src={
+              S3_IMAGES.GENEREL.S3_PATH +
+              "/" +
+              S3_IMAGES.S3_FOLDER.MODELS +
+              "/" +
+              S3_IMAGES.S3_MODELS.OKHI_90_RED +
+              ".png"
+            }
+            reducedImgSrc={
+              S3_IMAGES.GENEREL.S3_PATH +
+              "/" +
+              S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+              "/" +
+              S3_IMAGES.S3_MODELS.OKHI_90_RED +
+              ".png"
+            }
+            alt="front page okinawa electric scooter model okhi-90"
+            className="img-fluid"
+          />
+        </div>
       </div>
 
       <Carousel responsive={responsive} infinite={true}>
-        {ModelsData.map((item) => {
+        {ModelsData.map((item, index) => {
           return (
-            <div className="card h-100 mx-4">
+            <div className="card h-100 mx-4" key={index}>
               <Link to={item.Url} className="text-decoration-none text-dark">
-                <img
+                <ProgressiveImage
                   src={item.ImgSrc}
+                  reducedImgSrc={item.reducedImgSrc}
                   className="card-img-top absolutePaddingBottomHome mt-3"
-                  alt={item.Name}
+                  alt={"okinawa electric scooter model " + item.Name}
                 />
                 <div className="fixed-bottom position-absolute zIndexM text-start">
                   <div className="card-body">

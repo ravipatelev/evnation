@@ -1,9 +1,22 @@
+import S3_IMAGES from "./S3Images";
 const ModelsData = [
   // OKHI-90
   {
     Name: "OKHI-90",
     ImgSrc:
-      "https://okinawascooters.com/wp-content/uploads/2022/03/okhi-90-red.jpg",
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.OKHI_90_RED +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.OKHI_90_RED +
+      ".png",
     Url: "/models/okhi-90",
     BatteryShort: "3.6 KWH Li-ion",
 
@@ -52,7 +65,19 @@ const ModelsData = [
   {
     Name: "PraisePro",
     ImgSrc:
-      "https://okinawascooters.com/wp-content/uploads/2020/05/PraiseProBlue2.png",
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.PRAISE_PRO_BLUE +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.PRAISE_PRO_BLUE +
+      ".png",
     Url: "/models/praise-pro",
     BatteryShort: "2.0 KWH Li-ion",
 
@@ -99,7 +124,19 @@ const ModelsData = [
   {
     Name: "IPraise+",
     ImgSrc:
-      "https://okinawascooters.com/wp-content/uploads/2020/05/iPrasieRed2.png",
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.IPRASIE_PLUS_RED +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.IPRASIE_PLUS_RED +
+      ".png",
     Url: "/models/i-praise-plus",
     BatteryShort: "3.3 KWH Li-ion",
 
@@ -146,7 +183,20 @@ const ModelsData = [
   // Ridge+
   {
     Name: "Ridge+",
-    ImgSrc: "https://okinawascooters.com/wp-content/uploads/2020/05/Ridge2.png",
+    ImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.RIDGE_PLUS_WHITE +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.RIDGE_PLUS_WHITE +
+      ".png",
     Url: "/models/ridge-plus-gps",
     BatteryShort: "1.74 KWH Li-ion",
 
@@ -194,7 +244,19 @@ const ModelsData = [
   {
     Name: "R30",
     ImgSrc:
-      "https://okinawascooters.com/wp-content/uploads/2020/05/r30-yellow3.png",
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.R30_YELLOW +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.R30_YELLOW +
+      ".png",
     Url: "/models/r30",
     BatteryShort: "1.25 KWH Li-ion",
 
@@ -239,7 +301,19 @@ const ModelsData = [
   {
     Name: "Lite",
     ImgSrc:
-      "https://okinawascooters.com/wp-content/uploads/2020/05/lite-seagreen-image3.png",
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.LITE_BLUE +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.LITE_BLUE +
+      ".png",
     Url: "/models/lite",
     BatteryShort: "1.25 KWH Li-ion",
 
@@ -283,7 +357,20 @@ const ModelsData = [
   // DUAL55AH
   {
     Name: "DUAL 55AH",
-    ImgSrc: "https://okinawascooters.com/wp-content/uploads/2021/01/4-1.png",
+    ImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS +
+      "/" +
+      S3_IMAGES.S3_MODELS.DUAL_55AH_RED +
+      ".png",
+    reducedImgSrc:
+      S3_IMAGES.GENEREL.S3_PATH +
+      "/" +
+      S3_IMAGES.S3_FOLDER.MODELS_LIGHT +
+      "/" +
+      S3_IMAGES.S3_MODELS.DUAL_55AH_RED +
+      ".png",
     Url: "/models/dual-55ah",
     BatteryShort: "2.64 KWH Li-ion",
 
@@ -327,4 +414,5 @@ const ModelsData = [
     WheelBase: "",
   },
 ];
+
 export default ModelsData;

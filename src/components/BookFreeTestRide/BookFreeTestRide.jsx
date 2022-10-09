@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import "./BookFreeTestRide.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import { menuMarginContext } from "../../App";
+import S3_IMAGES from "../../Constants/S3Images";
 
 const BookFreeTestRide = () => {
+  const [menuMargin] = useContext(menuMarginContext);
   const [values, setValues] = useState({
     Name: "",
     Contact: "",
@@ -40,7 +43,13 @@ const BookFreeTestRide = () => {
   };
 
   return (
-    <div className="container freeRideContainer py-4 pb-5">
+    <div
+      className={
+        menuMargin
+          ? "container freeRideContainer py-4 pb-5 pageMargin"
+          : "container freeRideContainer py-4 pb-5"
+      }
+    >
       <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
         Book <span className="textEvGreen">Free</span> Test{" "}
         <span className="textEvBlue">Drive</span>
@@ -51,8 +60,23 @@ const BookFreeTestRide = () => {
             Let's drive it!
           </p>
           <ProgressiveImage
-            src="https://drive.google.com/uc?export=view&id=1eiaKkX5-K_XPodc6BUU1DwIXhA0qfxH3"
-            alt="test drive img"
+            src={
+              S3_IMAGES.GENEREL.S3_PATH +
+              "/" +
+              S3_IMAGES.S3_FOLDER.MAIN +
+              "/" +
+              S3_IMAGES.S3_MAIN.FREE_DRIVE +
+              ".jpg"
+            }
+            reducedImgSrc={
+              S3_IMAGES.GENEREL.S3_PATH +
+              "/" +
+              S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+              "/" +
+              S3_IMAGES.S3_MAIN.FREE_DRIVE +
+              ".jpg"
+            }
+            alt="free test drive img"
             className="col-md-12 calcImgWidth"
           />
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import ModelsData from "../../Constants/ModelsData";
+import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const Footer = () => {
@@ -14,8 +15,23 @@ const Footer = () => {
             className="d-flex align-items-center mb-3 text-white text-decoration-none"
           >
             <ProgressiveImage
-              src="https://drive.google.com/uc?export=view&id=1Cy07IA9ERJ0knoMTxZ9HOA8Y2ACoadI-"
-              alt="logo"
+              src={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN +
+                "/" +
+                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
+                ".png"
+              }
+              reducedImgSrc={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                "/" +
+                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
+                ".png"
+              }
+              alt="evnation logo"
               className="footerLogo"
             />
           </Link>
@@ -61,8 +77,23 @@ const Footer = () => {
           <div className="mt-4 marginBottom992">
             <p>Authorized District Dealer of Okinawa Scooters</p>
             <ProgressiveImage
-              src="https://drive.google.com/uc?export=view&id=1kXrIRbqJmckLcegB8Yrg45H9-sQf4asP"
-              alt="okinawa logo"
+              src={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN +
+                "/" +
+                S3_IMAGES.S3_MAIN.OKINAWA_LOGO_WHITE +
+                ".png"
+              }
+              reducedImgSrc={
+                S3_IMAGES.GENEREL.S3_PATH +
+                "/" +
+                S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
+                "/" +
+                S3_IMAGES.S3_MAIN.OKINAWA_LOGO_WHITE +
+                ".png"
+              }
+              alt="electric scooter of okinawa logo"
               className="footerLogo"
             />
           </div>
@@ -70,9 +101,9 @@ const Footer = () => {
 
         <div className="col-lg-2 col-md-4 col-sm-6 col-6 mb-3 col399">
           <h5 className="fw-bold myBorder mb-4">Our Products</h5>
-          {ModelsData.map((item) => {
+          {ModelsData.map((item, index) => {
             return (
-              <ul className="nav flex-column">
+              <ul className="nav flex-column" key={index}>
                 <li className="nav-item mb-2 text-start">
                   <Link to={item.Url} className="nav-link p-0 text-white">
                     {item.Name}

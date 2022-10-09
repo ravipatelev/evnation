@@ -31,4 +31,5 @@ const ModelsData2 = {
     RangeCharge: "60",
   },
 };
+
 export default ModelsData2;
