@@ -6,13 +6,7 @@ const AboutUs = () => {
   const [menuMargin] = useContext(menuMarginContext);
 
   return (
-    <div
-      className={
-        menuMargin
-          ? "text-center comingSoon pageMargin"
-          : "text-center comingSoon"
-      }
-    >
+    <div className={`text-center comingSoon ${menuMargin && "pageMargin"}`}>
       <span className="textEvGreen">Coming</span>{" "}
       <span className="textEvBlue">Soon!</span>
     </div>

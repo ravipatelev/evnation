@@ -34,13 +34,7 @@ const ModelsDetails = () => {
   }
 
   return (
-    <div
-      className={
-        menuMargin
-          ? "container text-break mt-3 pageMargin"
-          : "container text-break mt-3"
-      }
-    >
+    <div className={`container text-break mt-3 ${menuMargin && "pageMargin"}`}>
       {ModelsData.map((item) => (
         <div>
           <h2 className="text-center mb-5">{item.Name}</h2>

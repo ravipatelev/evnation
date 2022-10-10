@@ -44,11 +44,9 @@ const ContactUs = () => {
 
   return (
     <div
-      className={
-        menuMargin
-          ? "container feedbackContainer pt-3 pb-5 pageMargin"
-          : "container feedbackContainer pt-3 pb-5"
-      }
+      className={`container feedbackContainer pt-3 pb-5 ${
+        menuMargin && "pageMargin"
+      }`}
     >
       <h1 className="text-center pb-4 mb-3">
         <span className="textEvGreen">Feedback</span>

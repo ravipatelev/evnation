@@ -9,11 +9,7 @@ const Models = () => {
   const [menuMargin] = useContext(menuMarginContext);
 
   return (
-    <div
-      className={
-        menuMargin ? "container pb-5 px-4 pageMargin" : "container pb-5 px-4"
-      }
-    >
+    <div className={`container pb-5 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="text-center py-3">
         <span className="textEvGreen">EV</span>{" "}
         <span className="textEvBlue">Models</span>

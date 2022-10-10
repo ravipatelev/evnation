@@ -5,8 +5,11 @@ const PrivacyPolicy = () => {
   const [menuMargin] = useContext(menuMarginContext);
 
   return (
-    <div className={menuMargin ? "container py-3 px-4 pageMargin" : "container py-3 px-4"}>
-      <h1 className="pb-3">Privacy Policy</h1>
+    <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
+      <h1 className="pb-3">
+        <span className="textEvGreen">Privacy</span>{" "}
+        <span className="textEvBlue">Policy</span>
+      </h1>
       <p>Effective Date: 1st September 2022</p>
       <p>
         1. <b>Introduction</b>

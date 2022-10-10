@@ -30,11 +30,7 @@ const Home = () => {
   };
 
   return (
-    <div
-      className={
-        menuMargin ? "container mt-3 pb-5 pageMargin" : "container mt-3 pb-5"
-      }
-    >
+    <div className={`container mt-3 pb-5 ${menuMargin && "pageMargin"}`}>
       <div className="row mb-4 margin576">
         <div className="col-lg-6 col-sm-12 my-auto textBoxPadding text-center">
           <div className="mt-4">

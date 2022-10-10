@@ -44,11 +44,9 @@ const BookFreeTestRide = () => {
 
   return (
     <div
-      className={
-        menuMargin
-          ? "container freeRideContainer py-4 pb-5 pageMargin"
-          : "container freeRideContainer py-4 pb-5"
-      }
+      className={`container freeRideContainer py-4 pb-5 ${
+        menuMargin && "pageMargin"
+      }`}
     >
       <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
         Book <span className="textEvGreen">Free</span> Test{" "}

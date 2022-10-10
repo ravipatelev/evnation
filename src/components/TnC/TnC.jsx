@@ -5,12 +5,11 @@ const TnC = () => {
   const [menuMargin] = useContext(menuMarginContext);
 
   return (
-    <div
-      className={
-        menuMargin ? "container py-3 px-4 pageMargin" : "container py-3 px-4"
-      }
-    >
-      <h1 className="pb-3">Terms and Conditions</h1>
+    <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
+      <h1 className="pb-3">
+        <span className="textEvGreen">Terms</span>{" "}
+        <span className="textEvBlue">and Conditions</span>
+      </h1>
       <p>Effective Date: 1st September 2022</p>
       <p>
         Please read these terms and conditions carefully before using Our

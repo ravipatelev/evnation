@@ -115,7 +115,7 @@ const EvCalculator = () => {
             values.AvgDailyKms *
             365
         );
-      } else if (values.Model === "DUAL55AH") {
+      } else if (values.Model === "DUAL 55AH") {
         setCostPerKmEv(
           (ModelsData2.Dual55ah.Battery / ModelsData2.Dual55ah.RangeCharge) *
             ModelsData2.Generel.ElectricityChargePerUnit
@@ -140,11 +140,9 @@ const EvCalculator = () => {
 
   return (
     <div
-      className={
-        menuMargin
-          ? "container calcContainer pt-3 pb-5 mb-3 pageMargin"
-          : "container calcContainer pt-3 pb-5 mb-3"
-      }
+      className={`container calcContainer pt-3 pb-5 mb-3 ${
+        menuMargin && "pageMargin"
+      }`}
     >
       <h1 className="text-center pb-4 mb-2">
         <span className="textEvGreen">Savings</span>{" "}
