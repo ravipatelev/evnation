@@ -49,7 +49,6 @@ const App = () => {
 
   return (
     <div id="app">
-      {console.log("Welcome to EVnation")}
       <menuMarginContext.Provider value={[menuMargin, setMenuMargin]}>
         <Router>
           <ScrollToTop>
