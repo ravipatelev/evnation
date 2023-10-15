@@ -33,10 +33,10 @@ const ContactUs = () => {
       setInitialState(false);
       setValid(true);
       emailjs.sendForm(
-        "ev_nation_gmail",
-        "template_c7plaon",
+        "EVnation_Service_ID",
+        "EVnation_Template_ID",
         e.target,
-        "SBgp-fY6Jnv4W6GN0"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
     }
     setSubmitted(true);
