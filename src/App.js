@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
@@ -23,8 +23,33 @@ export const menuMarginContext = createContext();
 const App = () => {
   const [menuMargin, setMenuMargin] = useState(true);
 
+  useEffect(() => {
+    const initializeGoogleAnalytics = () => {
+      if (process.env.REACT_APP_GA_MEASUREMENT_ID) {
+        const script = document.createElement("script");
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${process.env.REACT_APP_GA_MEASUREMENT_ID}`;
+        script.async = true;
+
+        script.onload = () => {
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function () {
+            window.dataLayer.push(arguments);
+          };
+
+          window.gtag("js", new Date());
+          window.gtag("config", process.env.REACT_APP_GA_MEASUREMENT_ID);
+        };
+
+        document.head.appendChild(script);
+      }
+    };
+
+    initializeGoogleAnalytics();
+  }, []);
+
   return (
     <div id="app">
+      {console.log("Welcome to EVnation")}
       <menuMarginContext.Provider value={[menuMargin, setMenuMargin]}>
         <Router>
           <ScrollToTop>
