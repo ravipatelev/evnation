@@ -11,7 +11,7 @@ const Models = () => {
   return (
     <div className={`container pb-5 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="text-center py-3">
-        <span className="textEvGreen">EV</span>{" "}
+        <span className="textEvGreen">EV</span>
         <span className="textEvBlue">Models</span>
       </h1>
       <div className="row">

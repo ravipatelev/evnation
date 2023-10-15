@@ -49,7 +49,7 @@ const ContactUs = () => {
       }`}
     >
       <h1 className="text-center contactUsContainerh1 pb-4 mb-3">
-        <span className="textEvGreen">Contact</span>{" "}
+        <span className="textEvGreen">Contact</span>
         <span className="textEvBlue">Us</span>
       </h1>
       <div className="row">
@@ -180,7 +180,7 @@ const ContactUs = () => {
                   <div className="fs-4">
                     <p>We have received your response.</p>
                     <p>
-                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvGreen">Thank</span>
                       <span className="textEvBlue">you!</span>
                     </p>
                   </div>

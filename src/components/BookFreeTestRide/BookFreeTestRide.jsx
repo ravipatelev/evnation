@@ -49,7 +49,7 @@ const BookFreeTestRide = () => {
       }`}
     >
       <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
-        Book <span className="textEvGreen">Free</span> Test{" "}
+        Book <span className="textEvGreen">Free</span> Test
         <span className="textEvBlue">Drive</span>
       </h1>
       <div className="row">
@@ -178,7 +178,7 @@ const BookFreeTestRide = () => {
                   <div className="fs-4">
                     <p>We have received your response.</p>
                     <p>
-                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvGreen">Thank</span>
                       <span className="textEvBlue">you!</span>
                     </p>
                   </div>

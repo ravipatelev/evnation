@@ -7,7 +7,7 @@ const TnC = () => {
   return (
     <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="pb-3">
-        <span className="textEvGreen">Terms</span>{" "}
+        <span className="textEvGreen">Terms</span>
         <span className="textEvBlue">and Conditions</span>
       </h1>
       <p>Effective Date: 1st September 2022</p>
@@ -77,7 +77,7 @@ const TnC = () => {
         </li>
         <li className="text-start">
           <p>
-            <strong>Website</strong> refers to EVnation, accessible from{" "}
+            <strong>Website</strong> refers to EVnation, accessible from
             <b> evnation.in</b>
           </p>
         </li>
@@ -284,7 +284,7 @@ const TnC = () => {
         contact us:
       </p>
       <ul>
-        <li>By email: evnationkota@gmail.com</li>
+        <li>By email: evnationkota02@gmail.com</li>
       </ul>
     </div>
   );

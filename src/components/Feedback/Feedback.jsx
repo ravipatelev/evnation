@@ -149,7 +149,7 @@ const ContactUs = () => {
                   <div className="fs-4">
                     <p>We have received your response.</p>
                     <p>
-                      <span className="textEvGreen">Thank</span>{" "}
+                      <span className="textEvGreen">Thank</span>
                       <span className="textEvBlue">you!</span>
                     </p>
                   </div>

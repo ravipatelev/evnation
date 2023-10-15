@@ -145,7 +145,7 @@ const EvCalculator = () => {
       }`}
     >
       <h1 className="text-center pb-4 mb-2">
-        <span className="textEvGreen">Savings</span>{" "}
+        <span className="textEvGreen">Savings</span>
         <span className="textEvBlue">Calculator</span>
       </h1>
       <form onSubmit={handleSubmit}>
@@ -381,8 +381,8 @@ const EvCalculator = () => {
                           <th scope="row" valign="middle">
                             <small className="table1dNone fs-7">
                               Cost per km <br />
-                            </small>{" "}
-                            {Math.round((costPerKmEv + Number.EPSILON) * 100)}{" "}
+                            </small>
+                            {Math.round((costPerKmEv + Number.EPSILON) * 100)}
                             Paisa
                           </th>
                         </tr>

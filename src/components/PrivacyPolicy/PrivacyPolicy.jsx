@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="pb-3">
-        <span className="textEvGreen">Privacy</span>{" "}
+        <span className="textEvGreen">Privacy</span>
         <span className="textEvBlue">Policy</span>
       </h1>
       <p>Effective Date: 1st September 2022</p>
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
         Welcome to <b> evnation</b>.
       </p>
       <p>
-        <b>evnation</b> (“us”, “we”, or “our”) operates <b>evnation.in</b>{" "}
+        <b>evnation</b> (“us”, “we”, or “our”) operates <b>evnation.in</b>
         (hereinafter referred to as <b>“Service”</b>).
       </p>
       <p>
@@ -70,7 +70,7 @@ const PrivacyPolicy = () => {
         person who processes the data on behalf of the Data Controller. We may
         use the services of various Service Providers in order to process your
         data more effectively.
-      </p>{" "}
+      </p>
       <p>
         <b>DATA SUBJECT</b> is any living individual who is the subject of
         Personal Data.
@@ -301,7 +301,7 @@ const PrivacyPolicy = () => {
         protect your Personal Data, we cannot guarantee its absolute security.
       </p>
       <p>
-        10.{" "}
+        10.
         <b>
           Your Data Protection Rights Under General Data Protection Regulation
           (GDPR)
@@ -316,10 +316,9 @@ const PrivacyPolicy = () => {
         or limit the use of your Personal Data.
       </p>
       <p>
-        {" "}
         If you wish to be informed what Personal Data we hold about you and if
-        you want it to be removed from our systems, please email us at{" "}
-        <b>evnationkota@gmail.com</b>.
+        you want it to be removed from our systems, please email us at
+        <b>evnationkota02@gmail.com</b>.
       </p>
       <p>
         In certain circumstances, you have the following data protection rights:
@@ -362,7 +361,7 @@ const PrivacyPolicy = () => {
         Area (EEA).
       </p>
       <p>
-        11.{" "}
+        11.
         <b>
           Your Data Protection Rights under the California Privacy Protection
           Act (CalOPPA)
@@ -390,7 +389,7 @@ const PrivacyPolicy = () => {
       </p>
       <p>
         0.4. users are able to change their personal information by emailing us
-        at <b>evnationkota@gmail.com</b>.
+        at <b>evnationkota02@gmail.com</b>.
       </p>
       <p>Our Policy on “Do Not Track” Signals:</p>
       <p>
@@ -404,7 +403,7 @@ const PrivacyPolicy = () => {
         Settings page of your web browser.
       </p>
       <p>
-        12.{" "}
+        12.
         <b>
           Your Data Protection Rights under the California Consumer Privacy Act
           (CCPA)
@@ -494,7 +493,7 @@ const PrivacyPolicy = () => {
       </p>
       <p>
         To exercise your California data protection rights described above,
-        please send your request(s) by email: <b>evnationkota@gmail.com</b>.
+        please send your request(s) by email: <b>evnationkota02@gmail.com</b>.
       </p>
       <p>
         Your data protection rights, described above, are covered by the CCPA,
@@ -560,7 +559,7 @@ const PrivacyPolicy = () => {
         privacy policies or practices of any third party sites or services.
       </p>
       <p>
-        19.{" "}
+        19.
         <b>
           <b>Children’s Privacy</b>
         </b>
@@ -598,7 +597,7 @@ const PrivacyPolicy = () => {
       </p>
       <p>
         If you have any questions about this Privacy Policy, please contact us
-        by email: <b>evnationkota@gmail.com</b>.
+        by email: <b>evnationkota02@gmail.com</b>.
       </p>
     </div>
   );

@@ -172,13 +172,13 @@ const Footer = () => {
             </div>
             <div className="d-flex mb-3">
               <a
-                href="mailto:evnationkota@gmail.com"
+                href="mailto:evnationkota02@gmail.com"
                 className="d-flex text-white text-decoration-none myHover"
               >
                 <li>
                   <i className="bi bi-envelope text-white me-3"></i>
                 </li>
-                <li className="text-start">evnationkota@gmail.com</li>
+                <li className="text-start">evnationkota02@gmail.com</li>
               </a>
             </div>
             <div className="d-flex mb-3 myHover position768">
