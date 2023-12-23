@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { menuMarginContext } from "../../App";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const PrivacyPolicy = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -603,4 +604,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default withLayout(PrivacyPolicy);

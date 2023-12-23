@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import "./ModelsDetails.css";
 import ModelsData from "../../Constants/ModelsData";
-import { menuMarginContext } from "../../App";
+
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const ModelsDetails = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -35,8 +37,8 @@ const ModelsDetails = () => {
 
   return (
     <div className={`container text-break mt-3 ${menuMargin && "pageMargin"}`}>
-      {ModelsData.map((item) => (
-        <div>
+      {ModelsData.map((item, index) => (
+        <div key={index}>
           <h2 className="text-center mb-5">{item.Name}</h2>
           <div className="card mb-3 border-0">
             <div className="row g-0">
@@ -384,4 +386,4 @@ const ModelsDetails = () => {
   );
 };
 
-export default ModelsDetails;
+export default withLayout(ModelsDetails);

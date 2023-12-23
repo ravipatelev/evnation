@@ -6,7 +6,8 @@ import "react-multi-carousel/lib/styles.css";
 import ModelsData from "../../Constants/ModelsData";
 import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
-import { menuMarginContext } from "../../App";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const Home = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -88,39 +89,39 @@ const Home = () => {
       </div>
 
       <Carousel responsive={responsive} infinite={true}>
-        {ModelsData.map((item, index) => {
-          return (
-            <div className="card h-100 mx-4" key={index}>
-              <Link to={item.Url} className="text-decoration-none text-dark">
-                <ProgressiveImage
-                  src={item.ImgSrc}
-                  reducedImgSrc={item.reducedImgSrc}
-                  className="card-img-top absolutePaddingBottomHome mt-3"
-                  alt={"okinawa electric scooter model " + item.Name}
-                />
-                <div className="fixed-bottom position-absolute zIndexM text-start">
-                  <div className="card-body">
-                    <p className="card-text">
-                      Range: <b>{item.RangeCharge}</b>
-                    </p>
-                    <p className="card-text">
-                      Top Speed: <b>{item.Speed}</b>
-                    </p>
-                    <p className="card-text">
-                      Battery: <b>{item.BatteryShort}</b>
-                    </p>
-                  </div>
-                  <div className="card-footer bg-dark text-center priceColor fw-bold">
-                    {item.Name}
-                  </div>
+      {ModelsData.map((item, index) => {
+        return (
+          <div className="card h-100 mx-4" key={index}>
+            <Link to={item.Url} className="text-decoration-none text-dark">
+              <ProgressiveImage
+                src={item.ImgSrc}
+                reducedImgSrc={item.reducedImgSrc}
+                className="card-img-top absolutePaddingBottomHome mt-3"
+                alt={"okinawa electric scooter model " + item.Name}
+              />
+              <div className="fixed-bottom position-absolute zIndexM text-start">
+                <div className="card-body">
+                  <p className="card-text">
+                    Range: <b>{item.RangeCharge}</b>
+                  </p>
+                  <p className="card-text">
+                    Top Speed: <b>{item.Speed}</b>
+                  </p>
+                  <p className="card-text">
+                    Battery: <b>{item.BatteryShort}</b>
+                  </p>
                 </div>
-              </Link>
-            </div>
-          );
-        })}
+                <div className="card-footer bg-dark text-center priceColor fw-bold">
+                  {item.Name}
+                </div>
+              </div>
+            </Link>
+          </div>
+        );
+      })}
       </Carousel>
     </div>
   );
 };
 
-export default Home;
+export default withLayout(Home);

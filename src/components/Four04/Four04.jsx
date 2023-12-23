@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { menuMarginContext } from "../../App";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const Four04 = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -12,4 +13,4 @@ const Four04 = () => {
   );
 };
 
-export default Four04;
+export default withLayout(Four04);

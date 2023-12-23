@@ -205,8 +205,8 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <p className="text-white text-center text-muted mt-3">
-          Copyrights &copy; 2022 All Rights Reserved by evnation.in
+        <p className="text-center text-secondary mt-3">
+          Copyrights &copy; 2024 All Rights Reserved by evnation.in
         </p>
       </footer>
     </div>

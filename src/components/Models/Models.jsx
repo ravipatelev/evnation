@@ -2,8 +2,10 @@ import React, { useContext } from "react";
 import "./Models.css";
 import { Link } from "react-router-dom";
 import ModelsData from "../../Constants/ModelsData";
-import { menuMarginContext } from "../../App";
+
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const Models = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -15,9 +17,9 @@ const Models = () => {
         <span className="textEvBlue">Models</span>
       </h1>
       <div className="row">
-        {ModelsData.map((item) => {
+        {ModelsData.map((item, index) => {
           return (
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 my-3 nthChild">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-12 my-3 nthChild" key={index}>
               <div className="card h-100">
                 <Link to={item.Url} className="text-decoration-none text-dark">
                   <ProgressiveImage
@@ -52,4 +54,4 @@ const Models = () => {
   );
 };
 
-export default Models;
+export default withLayout(Models);

@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react";
 import "./EvCalculator.css";
 import ModelsData from "../../Constants/ModelsData";
 import ModelsData2 from "../../Constants/ModelsData2";
-import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
-import { menuMarginContext } from "../../App";
+import S3_IMAGES from "../../Constants/S3Images";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const EvCalculator = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -260,8 +261,8 @@ const EvCalculator = () => {
                     onChange={handleChange}
                   >
                     <option className="form-control">Select EV Model</option>
-                    {ModelsData.map((item) => (
-                      <option className="form-control">{item.Name}</option>
+                    {ModelsData.map((item, index) => (
+                      <option className="form-control" key={index}>{item.Name}</option>
                     ))}
                   </select>
                   {submitted && !values.Model && (
@@ -462,4 +463,4 @@ const EvCalculator = () => {
   );
 };
 
-export default EvCalculator;
+export default withLayout(EvCalculator);

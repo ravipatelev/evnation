@@ -1,10 +1,12 @@
 import React, { useState, useContext } from "react";
-import emailjs from "@emailjs/browser";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 import "./Feedback.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
-import { menuMarginContext } from "../../App";
+
 import S3_IMAGES from "../../Constants/S3Images";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const ContactUs = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -168,4 +170,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default withLayout(ContactUs);

@@ -61,6 +61,7 @@ const ModelsData = [
     Wheel: "16❞ Stylish Aluminium Alloy Wheel",
     WheelBase: "1520 mm",
   },
+
   // PraisePro
   {
     Name: "PraisePro",
@@ -120,6 +121,7 @@ const ModelsData = [
     Wheel: "Stylish Aluminium Alloy Wheel",
     WheelBase: "",
   },
+
   // IPraise+
   {
     Name: "IPraise+",
@@ -180,6 +182,7 @@ const ModelsData = [
     Wheel: "Stylish Aluminium Alloy Wheel",
     WheelBase: "",
   },
+
   // Ridge+
   {
     Name: "Ridge+",
@@ -240,6 +243,7 @@ const ModelsData = [
     Wheel: "Stylish Aluminium Alloy Wheel",
     WheelBase: "",
   },
+
   // R30
   {
     Name: "R30",
@@ -297,6 +301,7 @@ const ModelsData = [
     Wheel: "Stylish Aluminium Alloy Wheel",
     WheelBase: "",
   },
+
   // Lite
   {
     Name: "Lite",
@@ -354,6 +359,7 @@ const ModelsData = [
     Wheel: "Stylish Aluminum Alloy Wheel",
     WheelBase: "",
   },
+
   // DUAL55AH
   {
     Name: "DUAL 55AH",

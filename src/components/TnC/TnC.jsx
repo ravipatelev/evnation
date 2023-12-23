@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
-import { menuMarginContext } from "../../App";
+import withLayout from "../../withLayout";
+import { menuMarginContext } from "../../Layout";
 
 const TnC = () => {
   const [menuMargin] = useContext(menuMarginContext);
@@ -290,4 +291,4 @@ const TnC = () => {
   );
 };
 
-export default TnC;
+export default withLayout(TnC);

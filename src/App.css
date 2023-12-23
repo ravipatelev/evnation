@@ -45,7 +45,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 1001;
 }
 
 .myFooter {
@@ -63,7 +63,6 @@ html {
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  margin: auto 0 !important;
   z-index: 1000;
 }
 
@@ -71,14 +70,8 @@ html {
   color: black;
 }
 
-.comingSoon{
+.comingSoon {
   line-height: 40vh;
   font-weight: bold;
   font-size: 30px;
 }
-
-/* @media screen and (max-width: 306px) {
-  * {
-    display: none;
-  }
-} */

@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
-import { menuMarginContext } from "../../App";
+import { menuMarginContext } from "../../Layout";
 import S3_IMAGES from "../../Constants/S3Images";
 
 const Header = () => {
