@@ -6,10 +6,8 @@ import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 import S3_IMAGES from "../../Constants/S3Images";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const ContactUs = () => {
-  const [menuMargin] = useContext(menuMarginContext);
   const [values, setValues] = useState({
     Name: "",
     Contact: "",
@@ -45,11 +43,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div
-      className={`container feedbackContainer pt-3 pb-5 ${
-        menuMargin && "pageMargin"
-      }`}
-    >
+    <div className="container feedbackContainer pt-3 pb-5">
       <h1 className="text-center pb-4 mb-3">
         <span className="textEvGreen">Feedback</span>
         <span className="textEvBlue"></span>

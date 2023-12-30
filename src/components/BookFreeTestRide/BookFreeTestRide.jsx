@@ -6,10 +6,8 @@ import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 import S3_IMAGES from "../../Constants/S3Images";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const BookFreeTestRide = () => {
-  const [menuMargin] = useContext(menuMarginContext);
   const [values, setValues] = useState({
     Name: "",
     Contact: "",
@@ -45,14 +43,10 @@ const BookFreeTestRide = () => {
   };
 
   return (
-    <div
-      className={`container freeRideContainer py-4 pb-5 ${
-        menuMargin && "pageMargin"
-      }`}
-    >
+    <div className="container freeRideContainer py-4 pb-5">
       <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
         Book <span className="textEvGreen">Free</span> Test
-        <span className="textEvBlue">Drive</span>
+        <span className="textEvBlue"> Drive</span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">

@@ -1,8 +1,6 @@
-/* .textToBottom {
-  flex: 1 1 auto;
-} */
-
-.myBi:hover {
+.footerNavLink:hover,
+.myBi:hover,
+.footerContactUs:hover {
   color: var(--primary-blue) !important;
 }
 
@@ -19,11 +17,6 @@
   width: 70%;
   left: 0;
   bottom: -40%;
-}
-
-.nav-link span:hover,
-.myHover:hover {
-  color: var(--primary-blue) !important;
 }
 
 .footerLogo {

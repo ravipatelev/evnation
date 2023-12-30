@@ -1,47 +1,13 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
-import { menuMarginContext } from "../../Layout";
 import S3_IMAGES from "../../Constants/S3Images";
 
 const Header = () => {
-  const [menuMargin, setMenuMargin] = useContext(menuMarginContext);
-  const [navClassRemove, setNavClassRemove] = useState(true);
-  const [navClassAdd, setNavClassAdd] = useState(true);
-  const [btnClassAdd, setBtnClassAdd] = useState(true);
-
   const handleCollapse = () => {
-    menuMargin && setMenuMargin(!menuMargin);
-    navClassRemove && setNavClassRemove(!navClassRemove);
-    navClassAdd && setNavClassAdd(!navClassAdd);
-    btnClassAdd && setBtnClassAdd(!btnClassAdd);
-
-    var nav = document.getElementById("navbarSupportedContent");
-    var btn = document.getElementById("menuBtn");
+    var nav = document.getElementById("collapseExample");
     nav.classList.remove("show");
-    nav.classList.add("collapse");
-    btn.classList.add("collapsed");
-  };
-
-  const handleMenuMargin = () => {
-    setMenuMargin(!menuMargin);
-    setNavClassRemove(!navClassRemove);
-    setNavClassAdd(!navClassAdd);
-    setBtnClassAdd(!btnClassAdd);
-
-    var nav = document.getElementById("navbarSupportedContent");
-    var btn = document.getElementById("menuBtn");
-    navClassRemove ? nav.classList.remove("show") : nav.classList.add("show");
-    navClassAdd
-      ? nav.classList.add("collapse")
-      : nav.classList.remove("collapse");
-    btnClassAdd
-      ? btn.classList.add("collapsed")
-      : btn.classList.remove("collapsed");
-
-    // if we want to scroll to top when user clicks on menu button
-    // window.scrollTo(0, 0);
   };
 
   return (
@@ -73,54 +39,48 @@ const Header = () => {
         </div>
         <div>
           <button
-            id="menuBtn"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
             className="navbar-toggler"
             type="button"
-            // data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
             aria-label="Toggle navigation"
-            onClick={handleMenuMargin}
           >
             <i className="bi bi-list text-white fs-1"></i>
           </button>
         </div>
         <div
-          className="navbar-collapse justify-content-end"
-          id="navbarSupportedContent"
+          className="collapse navbar-collapse justify-content-end"
+          id="collapseExample"
         >
-          <ul className="navbar-nav justify-content-center">
-            <li>
+          <ul className="navbar-nav justify-content-center align-items-center">
+            <li className="">
               <NavLink
-                onClick={handleMenuMargin}
                 to="/"
-                className="nav-link text-white fromLeft home992"
+                className="nav-link headerNavLink text-white home992 pb-0"
               >
-                <span className="hoverMedia">Home</span>
+                <span className="">Home</span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                onClick={handleMenuMargin}
                 to="/ev-calculator"
-                className="nav-link text-white fromLeft"
+                className="nav-link headerNavLink text-white pb-0"
               >
-                <span className="hoverMedia">Savings Calculator</span>
+                <span className="">Savings Calculator</span>
               </NavLink>
             </li>
             <li>
               <NavLink
-                onClick={handleMenuMargin}
                 to="/models"
-                className="nav-link text-white fromLeft"
+                className="nav-link headerNavLink text-white pb-0"
               >
-                <span className="hoverMedia">Models</span>
+                <span className="">Models</span>
               </NavLink>
             </li>
             <li className="mx-4 freeRide992">
               <NavLink
-                onClick={handleMenuMargin}
                 to="/book-free-test-ride"
                 type="button"
                 className="btn myButton"

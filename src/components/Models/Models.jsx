@@ -5,21 +5,21 @@ import ModelsData from "../../Constants/ModelsData";
 
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const Models = () => {
-  const [menuMargin] = useContext(menuMarginContext);
-
   return (
-    <div className={`container pb-5 px-4 ${menuMargin && "pageMargin"}`}>
+    <div className="container pb-5 px-4">
       <h1 className="text-center py-3">
-        <span className="textEvGreen">EV</span>
+        <span className="textEvGreen">EV </span>
         <span className="textEvBlue">Models</span>
       </h1>
       <div className="row">
         {ModelsData.map((item, index) => {
           return (
-            <div className="col-lg-3 col-md-4 col-sm-6 col-12 my-3 nthChild" key={index}>
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-12 my-3 nthChild"
+              key={index}
+            >
               <div className="card h-100">
                 <Link to={item.Url} className="text-decoration-none text-dark">
                   <ProgressiveImage

@@ -4,10 +4,8 @@ import ModelsData from "../../Constants/ModelsData";
 
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const ModelsDetails = () => {
-  const [menuMargin] = useContext(menuMarginContext);
   let constant = window.location.pathname.replace(/\/models\/|-/g, ""),
     sliceA,
     sliceB;
@@ -36,11 +34,11 @@ const ModelsDetails = () => {
   }
 
   return (
-    <div className={`container text-break mt-3 ${menuMargin && "pageMargin"}`}>
+    <div className="container text-break mt-3">
       {ModelsData.map((item, index) => (
         <div key={index}>
-          <h2 className="text-center mb-5">{item.Name}</h2>
-          <div className="card mb-3 border-0">
+          <h2 className="text-center">{item.Name}</h2>
+          <div className="card mt-5 border-0">
             <div className="row g-0">
               <div className="col-md-8 col-sm-12">
                 <ProgressiveImage
@@ -50,7 +48,7 @@ const ModelsDetails = () => {
                   alt={"okinawa electric scooter model " + item.Name}
                 />
               </div>
-              <div className="col-md-4 col-sm-12 pt-5 dNone768">
+              <div className="col-md-4 col-sm-12 mt-5 dNone768">
                 <dl className="row mb-5">
                   {item.RangeCharge && (
                     <dt className="col-lg-6 col-md-12">Range Charge</dt>
@@ -60,6 +58,7 @@ const ModelsDetails = () => {
                       {item.RangeCharge}
                     </dd>
                   )}
+                  
                   {item.Battery && (
                     <dt className="col-lg-6 col-md-12 d-none d-sm-block col-sm-6">
                       Battery
@@ -143,7 +142,7 @@ const ModelsDetails = () => {
 
           {/* Model Details */}
           <div className="px-3">
-            <h3 className="mt-5 mb-4">Details:</h3>
+            <h3 className="mt-4 mb-4">Details:</h3>
             <dl className="row mb-5">
               {item.RangeCharge && (
                 <dt className="col-md-3 col-sm-6">Range Charge</dt>

@@ -3,14 +3,10 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
-export const menuMarginContext = createContext();
-
 const Layout = ({ children }) => {
-  const [menuMargin, setMenuMargin] = useState(true);
 
   return (
     <div id="app">
-      <menuMarginContext.Provider value={[menuMargin, setMenuMargin]}>
         <ScrollToTop>
           <div className="myHeader bg-dark headerMargin">
             <Header />
@@ -28,7 +24,6 @@ const Layout = ({ children }) => {
             <Footer />
           </div>
         </ScrollToTop>
-      </menuMarginContext.Provider>
     </div>
   );
 };

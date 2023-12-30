@@ -5,10 +5,8 @@ import ModelsData2 from "../../Constants/ModelsData2";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import S3_IMAGES from "../../Constants/S3Images";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const EvCalculator = () => {
-  const [menuMargin] = useContext(menuMarginContext);
   const [values, setValues] = useState({
     FuelPrice: "",
     AvgMilage: "",
@@ -140,13 +138,9 @@ const EvCalculator = () => {
   };
 
   return (
-    <div
-      className={`container calcContainer pt-3 pb-5 mb-3 ${
-        menuMargin && "pageMargin"
-      }`}
-    >
+    <div className="container calcContainer pt-3 pb-5 mb-3">
       <h1 className="text-center pb-4 mb-2">
-        <span className="textEvGreen">Savings</span>
+        <span className="textEvGreen">Savings </span>
         <span className="textEvBlue">Calculator</span>
       </h1>
       <form onSubmit={handleSubmit}>
@@ -262,7 +256,9 @@ const EvCalculator = () => {
                   >
                     <option className="form-control">Select EV Model</option>
                     {ModelsData.map((item, index) => (
-                      <option className="form-control" key={index}>{item.Name}</option>
+                      <option className="form-control" key={index}>
+                        {item.Name}
+                      </option>
                     ))}
                   </select>
                   {submitted && !values.Model && (

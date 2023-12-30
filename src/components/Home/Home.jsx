@@ -7,10 +7,8 @@ import ModelsData from "../../Constants/ModelsData";
 import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const Home = () => {
-  const [menuMargin] = useContext(menuMarginContext);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -31,10 +29,10 @@ const Home = () => {
   };
 
   return (
-    <div className={`container mt-3 pb-5 ${menuMargin && "pageMargin"}`}>
+    <div className="container pb-5">
       <div className="row mb-4 margin576">
         <div className="col-lg-6 col-sm-12 my-auto textBoxPadding text-center">
-          <div className="mt-4">
+          <div>
             <h3>
               Authorized District Dealer <br /> of Okinawa Scooters
             </h3>
@@ -89,36 +87,36 @@ const Home = () => {
       </div>
 
       <Carousel responsive={responsive} infinite={true}>
-      {ModelsData.map((item, index) => {
-        return (
-          <div className="card h-100 mx-4" key={index}>
-            <Link to={item.Url} className="text-decoration-none text-dark">
-              <ProgressiveImage
-                src={item.ImgSrc}
-                reducedImgSrc={item.reducedImgSrc}
-                className="card-img-top absolutePaddingBottomHome mt-3"
-                alt={"okinawa electric scooter model " + item.Name}
-              />
-              <div className="fixed-bottom position-absolute zIndexM text-start">
-                <div className="card-body">
-                  <p className="card-text">
-                    Range: <b>{item.RangeCharge}</b>
-                  </p>
-                  <p className="card-text">
-                    Top Speed: <b>{item.Speed}</b>
-                  </p>
-                  <p className="card-text">
-                    Battery: <b>{item.BatteryShort}</b>
-                  </p>
+        {ModelsData.map((item, index) => {
+          return (
+            <div className="card h-100 mx-4" key={index}>
+              <Link to={item.Url} className="text-decoration-none text-dark">
+                <ProgressiveImage
+                  src={item.ImgSrc}
+                  reducedImgSrc={item.reducedImgSrc}
+                  className="card-img-top absolutePaddingBottomHome mt-3"
+                  alt={"okinawa electric scooter model " + item.Name}
+                />
+                <div className="fixed-bottom position-absolute zIndexM text-start">
+                  <div className="card-body">
+                    <p className="card-text">
+                      Range: <b>{item.RangeCharge}</b>
+                    </p>
+                    <p className="card-text">
+                      Top Speed: <b>{item.Speed}</b>
+                    </p>
+                    <p className="card-text">
+                      Battery: <b>{item.BatteryShort}</b>
+                    </p>
+                  </div>
+                  <div className="card-footer bg-dark text-center priceColor fw-bold">
+                    {item.Name}
+                  </div>
                 </div>
-                <div className="card-footer bg-dark text-center priceColor fw-bold">
-                  {item.Name}
-                </div>
-              </div>
-            </Link>
-          </div>
-        );
-      })}
+              </Link>
+            </div>
+          );
+        })}
       </Carousel>
     </div>
   );

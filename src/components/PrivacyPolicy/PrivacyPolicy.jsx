@@ -1,12 +1,9 @@
 import React, { useContext } from "react";
 import withLayout from "../../withLayout";
-import { menuMarginContext } from "../../Layout";
 
 const PrivacyPolicy = () => {
-  const [menuMargin] = useContext(menuMarginContext);
-
   return (
-    <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
+    <div className="container py-3 px-4">
       <h1 className="pb-3">
         <span className="textEvGreen">Privacy</span>
         <span className="textEvBlue">Policy</span>

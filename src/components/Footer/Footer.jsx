@@ -7,37 +7,13 @@ import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const Footer = () => {
   return (
-    <div className="container overflow-hidden">
-      <footer className="row my-5 text-white marginTop992">
+    <div className="mx-5 ps-3 pe-5 overflow-hidden">
+      <footer className="row mt-5 mb-2 text-white marginTop992">
         <div className="col-lg-5 col-md-12 col-sm-12 col-12 mb-2 d-flex flex-column">
-          <Link
-            to="/"
-            className="d-flex align-items-center mb-3 text-white text-decoration-none"
-          >
-            <ProgressiveImage
-              src={
-                S3_IMAGES.GENEREL.S3_PATH +
-                "/" +
-                S3_IMAGES.S3_FOLDER.MAIN +
-                "/" +
-                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
-                ".png"
-              }
-              reducedImgSrc={
-                S3_IMAGES.GENEREL.S3_PATH +
-                "/" +
-                S3_IMAGES.S3_FOLDER.MAIN_LIGHT +
-                "/" +
-                S3_IMAGES.S3_MAIN.EVNATION_LOGO +
-                ".png"
-              }
-              alt="evnation logo"
-              className="footerLogo"
-            />
-          </Link>
-          <p className="text-white me-5 margin768">
+          <p className="text-white me-5 fs-5 margin768">
             EVnation is committed to create awareness regarding Electrical
-            (Battery) Scooters and helping India GO GREEN !!
+            (Battery) Scooters and helping India
+            <span className="priceColor"> GO GREEN</span> !!
             <br /> Let's Electrify your ride with battery !!
           </p>
           <div className="fs-5 mt-1">
@@ -74,7 +50,7 @@ const Footer = () => {
               <i className="bi bi-twitter text-white myBi"></i>
             </a>
           </div>
-          <div className="mt-4 marginBottom992">
+          <div className="mt-3 marginBottom992">
             <p>Authorized District Dealer of Okinawa Scooters</p>
             <ProgressiveImage
               src={
@@ -105,7 +81,7 @@ const Footer = () => {
             return (
               <ul className="nav flex-column" key={index}>
                 <li className="nav-item mb-2 text-start">
-                  <Link to={item.Url} className="nav-link p-0 text-white">
+                  <Link to={item.Url} className="nav-link footerNavLink p-0 text-white">
                     {item.Name}
                   </Link>
                 </li>
@@ -120,32 +96,32 @@ const Footer = () => {
           </h5>
           <ul className="nav flex-column">
             <li className="nav-item mb-2 text-start">
-              <Link to="/" className="nav-link p-0 text-white">
+              <Link to="/" className="nav-link footerNavLink p-0 text-white">
                 Home
               </Link>
             </li>
             <li className="nav-item mb-2 text-start">
-              <Link to="/about-us" className="nav-link p-0 text-white">
+              <Link to="/about-us" className="nav-link footerNavLink p-0 text-white">
                 About Us
               </Link>
             </li>
             <li className="nav-item mb-2 text-start">
-              <Link to="/blogs" className="nav-link p-0 text-white">
+              <Link to="/blogs" className="nav-link footerNavLink p-0 text-white">
                 Blogs
               </Link>
             </li>
             <li className="nav-item mb-2 text-start">
-              <Link to="/faqs" className="nav-link p-0 text-white">
+              <Link to="/faqs" className="nav-link footerNavLink p-0 text-white">
                 FAQs
               </Link>
             </li>
             <li className="nav-item mb-2 text-start">
-              <Link to="/privacy-policy" className="nav-link p-0 text-white">
+              <Link to="/privacy-policy" className="nav-link footerNavLink p-0 text-white">
                 Privacy Policy
               </Link>
             </li>
             <li className="nav-item mb-2 text-start">
-              <Link to="/tnc" className="nav-link p-0 text-white">
+              <Link to="/tnc" className="nav-link footerNavLink p-0 text-white">
                 TnC
               </Link>
             </li>
@@ -153,45 +129,45 @@ const Footer = () => {
         </div>
 
         <div className="col-lg-3 col-md-4 col-sm-6 col-6 mb-3 d-flex flex-column col399">
-          <Link to="/contact-us" className="nav-link text-white">
+          <Link to="/contact-us" className="nav-link footerNavLink text-white">
             <h5 className="fw-bold myBorder mb-4">
-              <span>Contact Us</span>
+              <span className="footerContactUs">Contact Us</span>
             </h5>
           </Link>
           <ul className="nav flex-column textToBottom">
-            <div className="d-flex mb-3">
+            <div className="d-flex mb-3 footerContactUs">
               <a
                 href="tel:918233024290"
-                className="d-flex text-white text-decoration-none myHover"
+                className="d-flex text-white text-decoration-none"
               >
                 <li>
-                  <i className="bi bi-telephone text-white me-3"></i>
+                  <i className="bi bi-telephone text-white me-3 footerContactUs"></i>
                 </li>
-                <li className="text-start mob399">+91 82330 24290</li>
+                <li className="text-start mob399 footerContactUs">+91 82330 24290</li>
               </a>
             </div>
             <div className="d-flex mb-3">
               <a
                 href="mailto:evnationkota02@gmail.com"
-                className="d-flex text-white text-decoration-none myHover"
+                className="d-flex text-white text-decoration-none"
               >
                 <li>
-                  <i className="bi bi-envelope text-white me-3"></i>
+                  <i className="bi bi-envelope text-white me-3 footerContactUs"></i>
                 </li>
-                <li className="text-start">evnationkota02@gmail.com</li>
+                <li className="text-start footerContactUs">evnationkota02@gmail.com</li>
               </a>
             </div>
-            <div className="d-flex mb-3 myHover position768">
+            <div className="d-flex mb-3 position768">
               <a
                 href="https://maps.app.goo.gl/F33SZH7M4HWp1MDr5"
                 target="_blank"
                 rel="noreferrer"
-                className="d-flex text-white text-decoration-none myHover"
+                className="d-flex text-white text-decoration-none"
               >
                 <li>
-                  <i className="bi bi-geo-alt text-white me-3"></i>
+                  <i className="bi bi-geo-alt text-white me-3 footerContactUs"></i>
                 </li>
-                <li className="text-start">
+                <li className="text-start footerContactUs">
                   15, Vallabh Nagar, Near Ghode Wale Baba Chauraha,
                   Kota(Rajasthan), 324007
                 </li>
@@ -199,7 +175,7 @@ const Footer = () => {
             </div>
           </ul>
           {/* <p>Timings: 9:00 AM - 8:30 PM</p> */}
-          <div className="text-end position768 feedback576">
+          <div className="mt-2 position768 feedback576">
             <Link to="/feedback" className="btn myButton">
               FEEDBACK
             </Link>
