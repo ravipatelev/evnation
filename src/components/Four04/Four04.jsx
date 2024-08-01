@@ -7,7 +7,7 @@ const Four04 = () => {
   return (
     <div className={`text-center comingSoon ${menuMargin && "pageMargin"}`}>
       <span className="textEvGreen">Page</span>
-      <span className="textEvBlue">not found!</span>
+      <span className="textEvBlue"> not found!</span>
     </div>
   );
 };

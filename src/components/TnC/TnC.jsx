@@ -8,7 +8,7 @@ const TnC = () => {
     <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="pb-3">
         <span className="textEvGreen">Terms</span>
-        <span className="textEvBlue">and Conditions</span>
+        <span className="textEvBlue"> and Conditions</span>
       </h1>
       <p>Effective Date: 1st September 2022</p>
       <p>

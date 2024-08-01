@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import ModelsData from "../../Constants/ModelsData";
@@ -6,6 +6,14 @@ import S3_IMAGES from "../../Constants/S3Images";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
 const Footer = () => {
+  // State to store the current year
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  // Effect to update the year when the component mounts
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <div className="container overflow-hidden">
       <footer className="row my-5 text-white marginTop992">
@@ -206,7 +214,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-white text-center text-muted mt-3">
-          Copyrights &copy; 2022 All Rights Reserved by evnation.in
+          Copyrights &copy; {currentYear} All Rights Reserved by evnation.in
         </p>
       </footer>
     </div>

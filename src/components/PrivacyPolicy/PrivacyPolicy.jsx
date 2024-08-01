@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     <div className={`container py-3 px-4 ${menuMargin && "pageMargin"}`}>
       <h1 className="pb-3">
         <span className="textEvGreen">Privacy</span>
-        <span className="textEvBlue">Policy</span>
+        <span className="textEvBlue"> Policy</span>
       </h1>
       <p>Effective Date: 1st September 2022</p>
       <p>

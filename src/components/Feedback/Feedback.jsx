@@ -50,7 +50,6 @@ const ContactUs = () => {
     >
       <h1 className="text-center pb-4 mb-3">
         <span className="textEvGreen">Feedback</span>
-        <span className="textEvBlue"></span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">

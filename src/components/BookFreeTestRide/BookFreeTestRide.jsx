@@ -50,7 +50,7 @@ const BookFreeTestRide = () => {
     >
       <h1 className="text-center freeRideContainerh1 pb-4 mb-3">
         Book <span className="textEvGreen">Free</span> Test
-        <span className="textEvBlue">Drive</span>
+        <span className="textEvBlue"> Drive</span>
       </h1>
       <div className="row">
         <div className="col-md-6 px-5">
@@ -179,7 +179,7 @@ const BookFreeTestRide = () => {
                     <p>We have received your response.</p>
                     <p>
                       <span className="textEvGreen">Thank</span>
-                      <span className="textEvBlue">you!</span>
+                      <span className="textEvBlue"> you!</span>
                     </p>
                   </div>
                   <div className="pt-2">

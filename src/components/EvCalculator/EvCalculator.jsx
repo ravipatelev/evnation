@@ -146,7 +146,7 @@ const EvCalculator = () => {
     >
       <h1 className="text-center pb-4 mb-2">
         <span className="textEvGreen">Savings</span>
-        <span className="textEvBlue">Calculator</span>
+        <span className="textEvBlue"> Calculator</span>
       </h1>
       <form onSubmit={handleSubmit}>
         {initialState && (

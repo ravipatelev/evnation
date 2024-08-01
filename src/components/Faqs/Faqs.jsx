@@ -8,7 +8,7 @@ const Faqs = () => {
   return (
     <div className={`text-center comingSoon ${menuMargin && "pageMargin"}`}>
       <span className="textEvGreen">Coming</span>
-      <span className="textEvBlue">Soon!</span>
+      <span className="textEvBlue"> Soon!</span>
     </div>
   );
 };
