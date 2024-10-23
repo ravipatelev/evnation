@@ -11,8 +11,8 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg ms-5 zIndex">
-      <div className="container-fluid position-static py-1 d-flex">
+    <div className=" navbar navbar-expand-lg ms-5 zIndex">
+      <div className="container container-fluid position-static py-1 d-flex">
         <div className="text-decoration-none w-25">
           <NavLink to="/" onClick={handleCollapse}>
             <ProgressiveImage
@@ -91,7 +91,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
