@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import withLayout from "../../withLayout";
 
 const TnC = () => {
@@ -76,7 +76,7 @@ const TnC = () => {
         <li className="text-start">
           <p>
             <strong>Website</strong> refers to EVnation, accessible from
-            <b> evnation.in</b>
+            <b> https://evnationkota.netlify.app/ </b>
           </p>
         </li>
         <li className="text-start">

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import withLayout from "../../withLayout";
 
 const PrivacyPolicy = () => {
@@ -16,13 +16,15 @@ const PrivacyPolicy = () => {
         Welcome to <b> evnation</b>.
       </p>
       <p>
-        <b>evnation</b> (“us”, “we”, or “our”) operates <b>evnation.in</b>
+        <b>evnation</b> (“us”, “we”, or “our”) operates{" "}
+        <b>https://evnationkota.netlify.app/</b>
         (hereinafter referred to as <b>“Service”</b>).
       </p>
       <p>
-        Our Privacy Policy governs your visit to <b>evnation.in</b>, and
-        explains how we collect, safeguard and disclose information that results
-        from your use of our Service.
+        Our Privacy Policy governs your visit to{" "}
+        <b>https://evnationkota.netlify.app/</b>, and explains how we collect,
+        safeguard and disclose information that results from your use of our
+        Service.
       </p>
       <p>
         We use your data to provide and improve Service. By using Service, you
@@ -40,7 +42,8 @@ const PrivacyPolicy = () => {
         2. <b>Definitions</b>
       </p>
       <p>
-        <b>SERVICE</b> means the evnation.in website operated by evnation.
+        <b>SERVICE</b> means the https://evnationkota.netlify.app/ website
+        operated by evnation.
       </p>
       <p>
         <b>PERSONAL DATA</b> means data about a living individual who can be

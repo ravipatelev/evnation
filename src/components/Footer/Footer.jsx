@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ModelsData from "../../Constants/ModelsData";
 import S3_IMAGES from "../../Constants/S3Images";
@@ -241,7 +241,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-center text-secondary mt-3">
-            Copyrights &copy; {currentYear} All Rights Reserved by evnation.in
+            Copyrights &copy; {currentYear} All Rights Reserved by evnation
           </p>
         </footer>
       </div>
